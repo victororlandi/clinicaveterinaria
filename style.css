@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    height: 78px;
+    width: 100vw;
+    background-color:rgb(249, 232, 0);
+}
+
+nav ul{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+nav ul li a.item-menu-moldura{
+    border-style: solid;
+    padding: 1px 5px;
+}
+.bichos-atendidos{
+    height: 300px;
+    width: 100vw;
+}
+.depoimentos{
+    height: 300px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 280px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.depoimentos p{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(0,0,0);
+    border-width: 5px;
+    padding: 15px;
+    font-size:large;
+    text-align: justify;
+    
+}
+
+footer{
+    height: 280px;
+    width: 100vw;
+    background-color:rgb(249,232,0);
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
