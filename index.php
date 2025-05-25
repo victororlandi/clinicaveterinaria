@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <title>Petisco</title>
 </head>
 <body>
@@ -53,33 +55,26 @@
         </p>
     </section>
     <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="300px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <ul>
             <li><a href="#">Nossos Serviços</a></li>
             <li><a href="#">Dicas Para Teu Pet</a></li>
-            <li><a href="#">Colaboradores</a></li>
+            <li><a href="#">Presenteie com Petisco</a></li>
             <li><a href="#">Planos</a></li>
             <li><a href="#">Eventos</a></li>
             <li><a href="#">Link pro zap web</a></li>
         </ul>
         <ul>
-            <li><a href="#">Nossos Serviços</a></li>
-            <li><a href="#">Dicas Para Teu Pet</a></li>
-            <li><a href="#">Colaboradores</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Link pro zap web</a></li>
+            <li><a href="#">Perguntas e Respostas Frequentes</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            <li><a href="#">Clube de Membros</a></li>
         </ul>
         <ul>
-            <li><a href="#">Nossos Serviços</a></li>
-            <li><a href="#">Dicas Para Teu Pet</a></li>
-            <li><a href="#">Colaboradores</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Link pro zap web</a></li>
+            <li><a href="#">Nossos Contatos</a></li>
+            <li><a href="#">Desinscreva-se</a></li>
         </ul>
-        <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="300px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        <img src="assets/img/illustrations/PNG/08.png">
     </footer>
 </body>
 </html>
