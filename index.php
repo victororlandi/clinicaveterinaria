@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/style.css">
@@ -9,7 +9,10 @@
 </head>
 <body>
     <header>
-        <h1>Pestisco</h1>
+        <section class="marca"> 
+            <img src="assets/img/icons/logo-2.png">
+            <h1>petisco</h1>
+        </section>
         <nav>
             <ul>
                 <li><a href="#">A clínica</a></li>
@@ -65,16 +68,21 @@
             <li><a href="#">Link pro zap web</a></li>
         </ul>
         <ul>
-            <li><a href="#">Perguntas e Respostas Frequentes</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
             <li><a href="#">Política de Privacidade</a></li>
             <li><a href="#">Termos e Condições</a></li>
             <li><a href="#">Clube de Membros</a></li>
         </ul>
         <ul>
             <li><a href="#">Nossos Contatos</a></li>
+            <section class="social">
+            <a href="#"><img src="assets/img/icons/facebook.png"></a>
+            <a href="#"><img src="assets/img/icons/instagram.png"></a>
+            <a href="#"><img src="assets/img/icons/zapefron.png"></a>
+            </section>
             <li><a href="#">Desinscreva-se</a></li>
         </ul>
-        <img src="assets/img/illustrations/PNG/08.png">
+        <img id="dog" src="assets/img/illustrations/PNG/08-cut.png">
     </footer>
 </body>
 </html>
