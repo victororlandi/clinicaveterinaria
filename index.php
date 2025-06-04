@@ -10,8 +10,8 @@
 <body>
     <header>
         <section class="marca"> 
-            <img src="assets/img/icons/logo-2.png">
-            <h1>petisco</h1>
+            <a href="index.php"><img src="assets/img/icons/logo-2.png"></a>
+            <a href="index.php"><h1>petisco</h1></a>
         </section>
         <nav>
             <ul>
@@ -19,10 +19,13 @@
                 <li><a href="#">Planos</a></li>
                 <li><a href="#">Nossos profissionais</a></li>
                 <li><a href="#" class="item-menu-moldura">Participar</a></li>
-                <li><a href="#" class="item-menu-moldura">Cadastro/Login</a></li>
+                <li><a href="view/cadastro-tutores.php" class="item-menu-moldura">Cadastro/Login</a></li>
             </ul>
         </nav>
     </header>
+    <section class="tentando-inventar-moda">
+        <img src="assets/img/illustrations/JPG/01-cut.jpg" width=100%>
+    </section>
     <section class="bichos-atendidos">
         <P>Aqui podemos colocar um carrossel com imagens dos bichos atendidos.</P>
         <p>A aba "Cadastre-se" por ser um menu suspenso onde vamos colocar as demais páginas de cadastro</p>
@@ -57,8 +60,11 @@
             José Santos
         </p>
     </section>
+    <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="300px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         <ul>
             <li><a href="#">Nossos Serviços</a></li>
             <li><a href="#">Dicas Para Teu Pet</a></li>

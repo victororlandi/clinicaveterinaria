@@ -9,9 +9,14 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;*/
 }
 
+header {
+    display: flex;
+    background-color: rgb(27, 60, 115);
+    height: 80px;
+}
+
 .marca {
-    height: 65px;
-    width: 100vw;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,25 +25,29 @@
 .marca img{
     height: 50px;
     width: 50px;
+
 }
 
 .marca h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.marca a{
+    text-decoration: none;
 }
 
 nav{
-    height: 78px;
-    width: 100vw;
-    background-color:rgb(218, 173, 187);
+    width: 70%;
+    
 }
 
 nav ul{
-    margin-left: 200px;
-    margin-right: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px;
+    align-items: center;
+    margin: 0px;
+    padding: 25px
 }
 
 nav ul li{
@@ -47,7 +56,14 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(0,0,0);
+    height: 80px;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color:rgb(218, 173, 187);
 }
 
 /*nav ul li a.item-menu-moldura{
@@ -134,6 +150,12 @@ body {
     text-align: justify;
 }
 
+.mapa{
+    margin: 0px;
+    height: 250px;
+}
+
+
 footer {
     height: 280px;
     width: 100vw;
@@ -145,10 +167,6 @@ footer {
     align-items: center;
 }
 
-iframe{
-    border-radius: 20%;
-    padding: 10px;
-}
 
 footer ul{
     margin: 0px;
