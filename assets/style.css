@@ -74,7 +74,7 @@ body {
 
 .formulario-img-lateral .formulario{
     background-color: rgb(213, 211, 212);
-    height: 600px;
+    height: 640px;
     width: 25%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -95,6 +95,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.formulario-img-lateral .formulario form button{
+    padding: 5px 80px;
+    color: rgb(255,255,255);
+    background-color:rgb(99,3,46);
 }
 
 .formulario form input{

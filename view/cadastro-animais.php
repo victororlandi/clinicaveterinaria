@@ -26,12 +26,13 @@
         <section class="formulario">
             <h1>CADASTRO DE ANIMAIS</h1>
             <form>
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Tipo (Ex.: canino, réptil etc.)">
-                <input type="text" placeholder="Idade">
-                <input type="number" placeholder="Peso">
-                <input type="text" placeholder="Tutor">
-                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Nome" name="inputNome">
+                <input type="text" placeholder="Tipo (Ex.: canino, réptil etc.)" name="inputTipo">
+                <input type="text" placeholder="Idade" name="inputIdade">
+                <input type="number" placeholder="Peso" name="inputPeso">
+                <input type="text" placeholder="Tutor" name="inputTutor">
+                <input type="email" placeholder="E-mail" name="inputEmail">
+                <button type="submit">Cadastrar</button>
             </form>
         </section>
         <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">

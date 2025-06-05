@@ -27,12 +27,13 @@
         <section class="formulario">
             <h1>CADASTRO DE TALENTOS</h1>
             <form>
-                <input type="text" placeholder="Nome Completo">
-                <input type="text" placeholder="CPF">
-                <input type="text" placeholder="Área de Interesse">
-                <input type="text" placeholder="Telefone">
-                <input type="text" placeholder="Endereço">
-                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Nome Completo" name="inputNomeCompleto">
+                <input type="text" placeholder="CPF" name="inputCPF">
+                <input type="text" placeholder="Área de Interesse" name="inputAreaInteresse">
+                <input type="text" placeholder="Telefone" name="inputTelefone">
+                <input type="text" placeholder="Endereço" name="inputEndereco">
+                <input type="email" placeholder="E-mail" name="inputEmail">
+                <button type="submit">Cadastrar</button>
             </form>
         </section>
     </section>

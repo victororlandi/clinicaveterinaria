@@ -25,14 +25,15 @@
     <section class="formulario-img-lateral">
         <section class="formulario">
             <h1>CADASTRO DE TUTOR</h1>
-            <form>
-                <input type="text" placeholder="Nome Completo">
-                <input type="text" placeholder="CPF">
-                <input type="date" placeholder="Data de Nascimento">
-                <input type="text" placeholder="Telefone">
-                <input type="text" placeholder="Endereço">
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Senha">
+            <form method="POST" action="../processamento/processamento.php">
+                <input type="text" placeholder="Nome Completo" name="inputNomeCompleto">
+                <input type="text" placeholder="CPF" name="inputCPF">
+                <input type="date" placeholder="Data de Nascimento" name="inputDataNascimento">
+                <input type="text" placeholder="Telefone" name="inputTelefone">
+                <input type="text" placeholder="Endereço" name="inputEndereco">
+                <input type="email" placeholder="E-mail" name="inputEmail">
+                <input type="password" placeholder="Senha" name="inputSenha">
+                <button type="submit">Cadastrar</button>
             </form>
         </section>
         <img id="cad-tutor" src="../assets/img/illustrations/JPG/26.jpg">
