@@ -11,7 +11,7 @@
         Campos:
 
         Pet (dropdown)
-        Tutor (auto-preenchido)
+        Tutor (auto-preenchido) <!-- no BD eu coloquei por último -->
         Vacina (dropdown: raiva, V10, antirrábica, etc.)
         Data de aplicação (obrigatório)
         Data da próxima dose (opcional)

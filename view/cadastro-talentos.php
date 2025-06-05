@@ -30,7 +30,7 @@
                 <input type="text" placeholder="Nome Completo">
                 <input type="text" placeholder="CPF">
                 <input type="text" placeholder="Área de Interesse">
-                <input type="text" placeholder="Celular">
+                <input type="text" placeholder="Telefone">
                 <input type="text" placeholder="Endereço">
                 <input type="email" placeholder="E-mail">
             </form>
