@@ -15,16 +15,23 @@
         </section>
         <nav>
             <ul>
-                <li><a href="#">A clínica</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Nossos profissionais</a></li>
-                <li><a href="#" class="item-menu-moldura">Participar</a></li>
-                <li><a href="view/cadastro-tutores.php" class="item-menu-moldura">Cadastro/Login</a></li>
+                <li><a href="view/quem-somos.php">Quem somos</a></li>
+                <li><a href="view/servicos.php">Serviços</a></li>
+                <section class="dropdown">
+                    <button class="botao-dropdown">Cadastre-se</button>
+                    <section class="conteudo-dropdown">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </section>
+                </section>
+                <li><a href="#">Agendamentos</a></li>
+                <li><a href="view/login.php">Login</a></li>
             </ul>
         </nav>
     </header>
     <section class="tentando-inventar-moda">
-        <img src="assets/img/illustrations/JPG/01-cut.jpg" width=100%>
+        <img src="assets/img/illustrations/JPG/01-cut.jpg" width=20%>
     </section>
     <section class="bichos-atendidos">
         <P>Aqui podemos colocar um carrossel com imagens dos bichos atendidos.</P>

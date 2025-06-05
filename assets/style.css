@@ -2,11 +2,6 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
-    /*
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    font-family:Verdana, Geneva, Tahoma, sans-serif;*/
 }
 
 header {
@@ -22,73 +17,103 @@ header {
     align-items: center;
 }
 
-.marca img{
+.marca img {
     height: 50px;
     width: 50px;
-
 }
 
 .marca h1 {
     color: rgb(255, 255, 255);
 }
 
-.marca a{
+.marca a {
     text-decoration: none;
 }
 
-nav{
+nav {
     width: 70%;
-    
+    overflow: hidden;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 25px
+    padding: 25px;
+    height: 80px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    height: 80px;
     color: rgb(255, 255, 255);
     padding: 30px;
+    text-align: center;
 }
 
-nav ul li a:hover{
+nav a:hover, .botao-dropdown:hover, .conteudo-dropdown a:hover {
     background-color: white;
     color:rgb(218, 173, 187);
 }
 
-/*nav ul li a.item-menu-moldura{
-    border-style: solid;
-    padding: 1px 5px;
-}*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown, .botao-dropdown {
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.conteudo-dropdown {
+    display: none;
+    position: absolute;
+    height: 40px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.conteudo-dropdown a {
+    float: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+}
+  
+.dropdown:hover, .conteudo-dropdown {
+    display: block;
+}                  
 
 body {
     background-color: rgb(255,255,255);
 }
 
-.formulario-img-lateral{
+.formulario-img-lateral {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.formulario-img-lateral img{
+.formulario-img-lateral img {
     border-radius: 30px;
     height: 750px;
     width: auto;
 }
 
-.formulario-img-lateral .formulario{
+.formulario-img-lateral .formulario {
     background-color: rgb(213, 211, 212);
     height: 600px;
     width: 25%;
@@ -100,20 +125,20 @@ body {
     flex-direction: column;
 }
 
-.formulario-img-lateral .formulario h1{
+.formulario-img-lateral .formulario h1 {
     text-align: center;
     padding: 10px;
     color: rgb(99, 3, 46);
 }
 
-.formulario-img-lateral .formulario form{
+.formulario-img-lateral .formulario form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.formulario form input{
+.formulario form input {
     padding: 20px 25px;
     border-style: solid;
     border-color: rgb(245,245,245);
@@ -126,12 +151,12 @@ body {
     justify-content: center
 }
 
-.bichos-atendidos{
+.bichos-atendidos {
     height: 300px;
     width: 100vw;
 }
 
-.depoimentos{
+.depoimentos {
     height: 300px;
     display: grid;
     grid-template-columns: 240px 240px 240px 240px;
@@ -140,7 +165,7 @@ body {
     justify-content: center;
 }
 
-.depoimentos p{
+.depoimentos p {
     border-style: solid;
     border-radius: 20px;
     border-color: rgba(114, 114, 114, 0.651);
@@ -150,11 +175,10 @@ body {
     text-align: justify;
 }
 
-.mapa{
+.mapa {
     margin: 0px;
     height: 250px;
 }
-
 
 footer {
     height: 280px;
@@ -167,8 +191,7 @@ footer {
     align-items: center;
 }
 
-
-footer ul{
+footer ul {
     margin: 0px;
     height: 240px;
     box-sizing: border-box;
@@ -179,17 +202,17 @@ footer ul{
     padding: 30px;
 }
 
-footer ul li{
+footer ul li {
     list-style: none;
 }
 
-footer ul li a{
+footer ul li a {
     color: rgb(0,0,0);
     text-decoration: none;
     font-size:medium;
 }
 
-footer .social{
+footer .social {
     display: flex;
     justify-items: space-evenly;
 }
@@ -200,7 +223,7 @@ footer .social img {
     padding: 3px;
 }
 
-footer img#dog{
+footer img#dog {
     height: 220px;
     width: 220px;
 }
