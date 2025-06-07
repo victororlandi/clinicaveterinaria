@@ -1,13 +1,12 @@
 *{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
 }
 
 header {
     display: flex;
     background-color: rgb(27, 60, 115);
-    height: 80px;
+    height: 50px;
 }
 
 .marca {
@@ -18,8 +17,8 @@ header {
 }
 
 .marca img {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
 }
 
 .marca h1 {
@@ -32,69 +31,78 @@ header {
 
 nav {
     width: 70%;
-    overflow: hidden;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    list-style: none;
+    padding: 0;
     margin: 0px;
-    padding: 25px;
-    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav ul li {
-    list-style: none;
+    position: relative; 
+    margin: 0px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    text-align: center;
-}
-
-nav a:hover, .botao-dropdown:hover, .conteudo-dropdown a:hover {
-    background-color: white;
-    color:rgb(218, 173, 187);
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown, .botao-dropdown {
-    border: none;
-    outline: none;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.conteudo-dropdown {
-    display: none;
-    position: absolute;
-    height: 40px;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.conteudo-dropdown a {
-    float: none;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    text-align: center;
-}
-  
-.dropdown:hover, .conteudo-dropdown {
+nav li a {
     display: block;
-}                  
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    height: 50px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(64, 103, 158);
+}
+
+.menu-dropdown {
+    display: none; 
+    position: absolute;
+    background-color: rgb(27, 60, 115);
+    top: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    width: 100%;
+    font-size: 15px;
+}
+
+.menu-dropdown ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.menu-dropdown li {
+    padding: 0px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.menu-dropdown li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 20px;
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.botao-dropdown:hover + .menu-dropdown {
+    display: block;
+}
+
+.menu-dropdown:hover {
+    display: block;
+}
 
 body {
     background-color: rgb(255,255,255);
@@ -155,12 +163,12 @@ body {
     height: 300px;
     width: 100vw;
 }
-
+/*
 .depoimentos {
     height: 300px;
     display: grid;
     grid-template-columns: 240px 240px 240px 240px;
-    grid-template-rows: 300px;
+    grid-template-rows: 250px;
     gap: 40px;
     justify-content: center;
 }
@@ -174,32 +182,32 @@ body {
     font-size:medium;
     text-align: justify;
 }
-
+*/
 .mapa {
     margin: 0px;
     height: 250px;
 }
 
 footer {
-    height: 280px;
+    height: 230px;
     width: 100vw;
     padding: 10px;
     background-color:rgb(218, 173, 187);
     display: flex;
     flex-direction: row; 
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 footer ul {
     margin: 0px;
-    height: 240px;
+    height: 130px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 30px;
+    padding: 10px 50px;
 }
 
 footer ul li {
@@ -224,6 +232,7 @@ footer .social img {
 }
 
 footer img#dog {
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
 }
