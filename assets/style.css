@@ -74,7 +74,7 @@ body {
 
 .formulario-img-lateral .formulario{
     background-color: rgb(213, 211, 212);
-    height: 640px;
+    height: 750px;
     width: 25%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -103,7 +103,7 @@ body {
     background-color:rgb(99,3,46);
 }
 
-.formulario form input{
+.formulario-img-lateral .formulario form input{
     padding: 20px 25px;
     border-style: solid;
     border-color: rgb(245,245,245);
@@ -113,7 +113,7 @@ body {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 .bichos-atendidos{

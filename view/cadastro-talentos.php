@@ -26,7 +26,7 @@
         <img id="cad-talentos" src="../assets/img/illustrations/JPG/27.jpg">
         <section class="formulario">
             <h1>CADASTRO DE TALENTOS</h1>
-            <form>
+            <form method="POST" action="../processamento/processamento.php">
                 <input type="text" placeholder="Nome Completo" name="inputNomeCompleto">
                 <input type="text" placeholder="CPF" name="inputCPF">
                 <input type="text" placeholder="Área de Interesse" name="inputAreaInteresse">
