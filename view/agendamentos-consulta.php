@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -24,33 +24,32 @@
     </header>
     <section class="formulario-img-lateral">
         <section class="formulario">
-            <h1>CADASTRO DE TUTOR</h1>
+            <h1>AGENDAMENTO CONSULTA</h1>
             <form method="POST" action="../processamento/processamento.php">
-                <input type="text" placeholder="Nome Completo" name="inputNomeCompleto">
-                <input type="text" placeholder="CPF" name="inputCPF">
-                <input type="date" placeholder="Data de Nascimento" name="inputDataNascimento">
-                <input type="text" placeholder="Telefone" name="inputTelefone">
-                <input type="text" placeholder="Endereço" name="inputEndereco">
-                <input type="email" placeholder="E-mail" name="inputEmail">
-                <input type="password" placeholder="Senha" name="inputSenha">
-                <button type="submit">Cadastrar</button>
+                <input type="text" placeholder="Pet" name="inputPet">
+                <input type="text" placeholder="Tutor" name="inputTutor">
+                <label>Data e Hora da Consulta</label>
+                <input type="datetime-local" name="inputDataHoraConsulta">
+                <input type="text" placeholder="Motivo (vacinação, check-up, emergência, etc.)" name="inputMotivoConsulta">
+                <input type="text" placeholder="Veterinário Responsável" name="inputVeterinarioResponsavel">
+                <input type="text" placeholder="Observações" name="inputObservacoes">
+                <button type="submit">Agendar</button>
             </form>
-            <h3><a href="ver-tutores.php">Visuzalizar Tutores</a></h3>
+            <h3><a href="ver-agendamentos-consulta.php">Visuzalizar Agendamentos de Consulta</a></h3>
         </section>
-        <img id="cad-tutor" src="../assets/img/illustrations/JPG/26.jpg">
+        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
     </section>
-        <!--<pre>
+    <!-- <pre>
         Campos:
 
-        Nome completo (obrigatório)
-        CPF (obrigatório, com validação)
-        Data de nascimento (obrigatório)
-        Telefone (obrigatório)
-        Endereço (Rua, número, complemento, CEP)
-        E-mail (obrigatório, com validação)
-        Senha (para acesso ao sistema, com confirmação)
-        <i>Ao clicar para enviar, o usuário é redirecionado para o Cadastro de Animais</i>
-    </pre>!-->
+        Pet (dropdown vinculado aos animais cadastrados)
+        Tutor (auto-preenchido com base no pet selecionado)
+        Data e hora (obrigatório, com calendário/horário)
+        Motivo (dropdown: vacinação, check-up, emergência, etc.)
+        Veterinário responsável (dropdown com nomes cadastrados)
+        Observações (textarea para detalhes extras. Ex: o Chicó fica agressivo quando vão cortar as unhas dele, a Paçoca precisa de focinheira, etc.)
+        Caso deseje, fale conosco pelo WhatsApp (link que redirecion pro zap web)
+    </pre> -->
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="300px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <ul>

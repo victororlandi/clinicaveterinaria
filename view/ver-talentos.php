@@ -1,9 +1,15 @@
+<?php
+
+require "../processamento/funcoesBD.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../assets/style.css">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -22,33 +28,24 @@
             </ul>
         </nav>
     </header>
-    <section class="formulario-img-lateral">
-        <section class="formulario">
-            <h1>AGENDAMENTO CONSULTA</h1>
-            <form method="POST" action="../processamento/processamento.php">
-                <input type="text" placeholder="Pet" name="inputPet">
-                <input type="text" placeholder="Tutor" name="inputTutor">
-                <label>Data e Hora da Consulta</label>
-                <input type="datetime-local" name="inputDataHoraConsulta">
-                <input type="text" placeholder="Motivo (vacinação, check-up, emergência, etc.)" name="inputMotivoConsulta">
-                <input type="text" placeholder="Veterinário Responsável" name="inputVeterinarioResponsavel">
-                <input type="text" placeholder="Observações" name="inputObervacoes">
-                <button type="submit">Agendar</button>
-            </form>
+    <section class="ver-dados">
+        <section class="ver-dados-box">
+            <h1>Talentos</h1>
+            <?php
+                $listaTalentos = retornarTalentos();
+                while($cadastrotalentos = mysqli_fetch_assoc($listaTalentos)){
+                    echo "<section class=\"conteudo-bloco\">";
+                    echo "<h2>" . $cadastrotalentos["Codigo"] . " " . $cadastrotalentos["NomeCompleto"] . " " . "</h2>";
+                    echo "<p>CPF: " . $cadastrotalentos["CPF"] . "</p>";
+                    echo "<p>Área de Interesse: " . $cadastrotalentos["AreaInteresse"] . "</p>";
+                    echo "<p>Telefone: " . $cadastrotalentos["Telefone"] . "</p>";
+                    echo "<p>Endereço: " . $cadastrotalentos["Endereco"] . "</p>";
+                    echo "<p>E-mail: " . $cadastrotalentos["Email"] . "</p>";
+                    echo "</section>";
+                }
+            ?>
         </section>
-        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
     </section>
-    <!-- <pre>
-        Campos:
-
-        Pet (dropdown vinculado aos animais cadastrados)
-        Tutor (auto-preenchido com base no pet selecionado)
-        Data e hora (obrigatório, com calendário/horário)
-        Motivo (dropdown: vacinação, check-up, emergência, etc.)
-        Veterinário responsável (dropdown com nomes cadastrados)
-        Observações (textarea para detalhes extras. Ex: o Chicó fica agressivo quando vão cortar as unhas dele, a Paçoca precisa de focinheira, etc.)
-        Caso deseje, fale conosco pelo WhatsApp (link que redirecion pro zap web)
-    </pre> -->
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="300px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <ul>

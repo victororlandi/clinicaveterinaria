@@ -39,6 +39,7 @@
                 <input type="file" name="inputAnexarArquivos">
                 <button type="submit">Cadastrar</button>
             </form>
+            <h3><a href="ver-historicos.php">Visuzalizar Historicos</a></h3>
         </section>
         <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
     </section>

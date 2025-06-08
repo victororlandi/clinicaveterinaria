@@ -95,25 +95,25 @@ else if (!empty ($_POST['inputPet']) && !empty ($_POST['inputVacina'])
 
     AgendarVacinacao($Pet, $Vacina, $DataAplicacao, $DataProximaDose, $VeterinarioResponsavel, $LoteVacina, $Tutor);
 
-    header('Location:../view/agendamento-vacinacao.php');
+    header('Location:../view/agendamentos-vacinacao.php');
     
     die();
 }
 
 else if (!empty ($_POST['inputPet']) && !empty ($_POST['inputTutor']) 
     && !empty ($_POST['inputDataHoraConsulta']) && !empty ($_POST['inputMotivoConsulta']) 
-    && !empty ($_POST['inputVeterinarioResponsavel']) && !empty ($_POST['inputObervacoes'])){
+    && !empty ($_POST['inputVeterinarioResponsavel']) && !empty ($_POST['inputObservacoes'])){
 
     $Pet = $_POST['inputPet'];
     $Tutor = $_POST['inputTutor'];
     $DataHoraConsulta = $_POST['inputDataHoraConsulta'];
     $MotivoConsulta = $_POST['inputMotivoConsulta'];
     $VeterinarioResponsavel = $_POST['inputVeterinarioResponsavel'];
-    $Obervacoes = $_POST['inputObervacoes'];
+    $Observacoes = $_POST['inputObservacoes'];
 
-    AgendarConsulta($Pet, $Tutor, $DataHoraConsulta, $MotivoConsulta, $VeterinarioResponsavel, $Obervacoes);
+    AgendarConsulta($Pet, $Tutor, $DataHoraConsulta, $MotivoConsulta, $VeterinarioResponsavel, $Observacoes);
 
-    header('Location:../view/agendamento-consulta.php');
+    header('Location:../view/agendamentos-consulta.php');
     
     die();
 }

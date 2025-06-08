@@ -34,6 +34,7 @@
                 <input type="email" placeholder="E-mail" name="inputEmail">
                 <button type="submit">Cadastrar</button>
             </form>
+            <h3><a href="ver-animais.php">Visuzalizar Animais</a></h3>
         </section>
         <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
     </section>

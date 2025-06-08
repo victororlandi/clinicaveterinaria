@@ -1,3 +1,9 @@
+<?php
+
+require "../processamento/funcoesBD.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -22,35 +28,24 @@
             </ul>
         </nav>
     </header>
-    <section class="formulario-img-lateral">
-        <section class="formulario">
-            <h1>AGENDAMENTO VACINAÇÃO</h1>
-            <form method="POST" action="../processamento/processamento.php">
-                <input type="text" placeholder="Pet" name="inputPet">
-                <input type="text" placeholder="Vacina (raiva, V10, antirrábica, etc.)" name="inputVacina">
-                <label>Data de Aplicação</label>
-                <input type="date" placeholder="Data de Aplicação" name="inputDataAplicacao">
-                <label>Data da Próxima Dose</label>
-                <input type="date" placeholder="Data Próxima Dose" name="inputDataProximaDose">
-                <input type="text" placeholder="Veterinário Responsável" name="inputVeterinarioResponsavel">
-                <input type="text" placeholder="Lote da Vacina" name="inputLoteVacina">
-                <input type="text" placeholder="Tutor" name="inputTutor">
-                <button type="submit">Agendar</button>
-            </form>
+    <section class="ver-dados">
+        <section class="ver-dados-box">
+            <h1>Consultas</h1>
+            <?php
+                $listaAgendamentosConsulta = retornarAgendamentosConsulta();
+                while($agendamentosconsulta = mysqli_fetch_assoc($listaAgendamentosConsulta)){
+                    echo "<section class=\"conteudo-bloco\">";
+                    echo "<h2>" . $agendamentosconsulta["Codigo"] . " " . $agendamentosconsulta["Pet"] . " " . "</h2>";
+                    echo "<p>Tutor: " . $agendamentosconsulta["Tutor"] . "</p>";
+                    echo "<p>Data/Hora da Consulta: " . $agendamentosconsulta["DataHoraConsulta"] . "</p>";
+                    echo "<p>Motivo da Consulta: " . $agendamentosconsulta["MotivoConsulta"] . "</p>";
+                    echo "<p>Veterinário Responsável: " . $agendamentosconsulta["VeterinarioResponsavel"] . "</p>";
+                    echo "<p>Observações: " . $agendamentosconsulta["Observacoes"] . "</p>";
+                    echo "</section>";
+                }
+            ?>
         </section>
-        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
     </section>
-    <!-- <pre>
-        Campos:
-
-        Pet (dropdown)
-        Vacina (dropdown: raiva, V10, antirrábica, etc.)
-        Data de aplicação (obrigatório)
-        Data da próxima dose (opcional)
-        Veterinário responsável (dropdown)
-        Lote da vacina (texto)
-        Tutor (auto-preenchido)
-    </pre> -->
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="300px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <ul>

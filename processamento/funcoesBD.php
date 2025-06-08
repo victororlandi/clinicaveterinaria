@@ -15,6 +15,14 @@ function inserirTutor($NomeCompleto, $CPF, $DataNascimento, $Telefone, $Endereco
     mysqli_query($conexao,$consulta); 
 }
 
+function retornarTutores(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM cadastrotutores";
+    $listaTutores = mysqli_query($conexao,$consulta);
+    return $listaTutores;
+}
+
 function inserirTalento($NomeCompleto, $CPF, $AreaInteresse, $Telefone, $Endereco, $Email){
 
     $conexao = conectarBD();
@@ -24,6 +32,15 @@ function inserirTalento($NomeCompleto, $CPF, $AreaInteresse, $Telefone, $Enderec
     mysqli_query($conexao,$consulta); 
 }
 
+function retornarTalentos(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM cadastrotalentos";
+    $listaTalentos = mysqli_query($conexao,$consulta);
+    return $listaTalentos;
+}
+
+
 function inserirAnimal($Nome, $Tipo, $Idade, $Peso, $Tutor, $Email){
 
     $conexao = conectarBD();
@@ -31,6 +48,14 @@ function inserirAnimal($Nome, $Tipo, $Idade, $Peso, $Tutor, $Email){
     $consulta = "INSERT INTO cadastroanimais (Nome, Tipo, Idade, Peso, Tutor, Email)
                  VALUES ('$Nome', '$Tipo', '$Idade', '$Peso', '$Tutor', '$Email')";
     mysqli_query($conexao,$consulta); 
+}
+
+function retornarAnimais(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM cadastroanimais";
+    $listaAnimais = mysqli_query($conexao,$consulta);
+    return $listaAnimais;
 }
 
 function inserirHistorico($Pet, $Tutor, $DataRegistro, $Diagnostico, $TratamentoPrescrito, $Medicamentos, $VeterinarioResponsavel, $AnexarArquivos){
@@ -42,21 +67,46 @@ function inserirHistorico($Pet, $Tutor, $DataRegistro, $Diagnostico, $Tratamento
     mysqli_query($conexao,$consulta); 
 }
 
+function retornarHistoricos(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM cadastrohistorico";
+    $listaHistoricos = mysqli_query($conexao,$consulta);
+    return $listaHistoricos;
+}
+
 function AgendarVacinacao($Pet, $Vacina, $DataAplicacao, $DataProximaDose, $VeterinarioResponsavel, $LoteVacina, $Tutor){
 
     $conexao = conectarBD();
     
-    $consulta = "INSERT INTO agendamentovacinacao (Pet, Vacina, DataAplicacao, DataProximaDose, VeterinarioResponsavel, LoteVacina, Tutor)
+    $consulta = "INSERT INTO agendamentosvacinacao (Pet, Vacina, DataAplicacao, DataProximaDose, VeterinarioResponsavel, LoteVacina, Tutor)
                  VALUES ('$Pet', '$Vacina', '$DataAplicacao', '$DataProximaDose', '$VeterinarioResponsavel', '$LoteVacina', '$Tutor')";
     mysqli_query($conexao,$consulta); 
 }
 
-function AgendarConsulta($Pet, $Tutor, $DataHoraConsulta, $MotivoConsulta, $VeterinarioResponsavel, $Obervacoes){
+function retornarAgendamentosVacinacao(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM agendamentosvacinacao";
+    $listaAgendamentosVacinacao = mysqli_query($conexao,$consulta);
+    return $listaAgendamentosVacinacao;
+}
+
+function AgendarConsulta($Pet, $Tutor, $DataHoraConsulta, $MotivoConsulta, $VeterinarioResponsavel, $Observacoes){
 
     $conexao = conectarBD();
     
-    $consulta = "INSERT INTO agendamentoconsulta (Pet, Tutor, DataHoraConsulta, MotivoConsulta, VeterinarioResponsavel, Obervacoes)
-                 VALUES ('$Pet', '$Tutor', '$DataHoraConsulta', '$MotivoConsulta', '$VeterinarioResponsavel', '$Obervacoes')";
+    $consulta = "INSERT INTO agendamentosconsulta (Pet, Tutor, DataHoraConsulta, MotivoConsulta, VeterinarioResponsavel, Observacoes)
+                 VALUES ('$Pet', '$Tutor', '$DataHoraConsulta', '$MotivoConsulta', '$VeterinarioResponsavel', '$Observacoes')";
     mysqli_query($conexao,$consulta); 
 }
+
+function retornarAgendamentosConsulta(){
+
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM agendamentosconsulta";
+    $listaAgendamentosConsulta = mysqli_query($conexao,$consulta);
+    return $listaAgendamentosConsulta;
+}
+
 ?>

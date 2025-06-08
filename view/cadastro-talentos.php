@@ -35,6 +35,7 @@
                 <input type="email" placeholder="E-mail" name="inputEmail">
                 <button type="submit">Cadastrar</button>
             </form>
+            <h3><a href="ver-talentos.php">Visuzalizar Talentos</a></h3>
         </section>
     </section>
     <!--<pre>
