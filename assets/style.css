@@ -12,8 +12,8 @@ header {
 #anuncio {
     height: 35px;
     text-align: center;
-    color: white;
-    background-color: rgb(27, 60, 115);
+    color: black;
+    border-bottom: 2px solid #efefef;
     padding: 5px;
 }
 
@@ -28,7 +28,7 @@ header {
 }
 
 #marca p{
-    color: rgb(27, 60, 115);
+    color: black;
     padding-top: 25px;
 }
 
@@ -82,9 +82,9 @@ nav ul li {
     margin: 0px;
 }
 
-nav li a {
+nav ul li a {
     display: block;
-    color: rgb(27, 60, 115);
+    color: black;
     background-color: white;
     padding: 5px 35px;
     text-decoration: none;
@@ -92,6 +92,7 @@ nav li a {
 
 nav ul li a:hover{
     color: rgb(218, 173, 187);
+    text-decoration: none;
 }
 
 .menu-dropdown {
@@ -112,14 +113,14 @@ nav ul li a:hover{
     display: block;
 }
 
-.menu-dropdown li {
+.menu-dropdown ul li {
     padding: 0px;
     text-align: center;
     display: block;
     width: 100%;
 }
 
-.menu-dropdown li a {
+.menu-dropdown ul li a {
     display: block;
     color: rgb(27, 60, 115);
     text-decoration: none;
@@ -155,16 +156,36 @@ img.propaganda{
 }
 
 body {
-    background-color: rgb(255,255,255);
+    background-color:#efefef;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 10px;
   width: 70%;
-  margin-left: 15%;
+  margin: 0 auto;
+}
+
+.grid-container h1 {
+    grid-column: 1 / 4;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.grid-container .espaco:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 /* Estilos para o Modal */
@@ -195,42 +216,32 @@ body {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #efefef;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: lighter;
   cursor: pointer;
 }
 
 /* Controles de zoom */
 .zoom-controls {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1001;
+  display: flex;
+  gap: 10px;
 }
 
 .zoom-controls button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #efefef;
+  color:rgb(64, 103, 158);
+  width: 50px;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
-  margin: 5px;
-}
-
-/* Efeito hover para imagens do grid */
-.grid-container img {
-  cursor: pointer;
-  transition: transform 0.3s;
-  width: 250px;
-  border-radius: 10%;
-}
-
-.grid-container img:hover {
-  transform: scale(1.05);
 }
 
 .formulario-img-lateral {

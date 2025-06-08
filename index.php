@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/style.css">
-        <script src="assets/script.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -83,11 +82,46 @@
     </div>
     <img class="propaganda" src="assets\img\propaganda\7.png">
     <section class="grid-container">
-        <img src="assets\img\espacos\centro-cirurgico-1.jpg">
-        <img src="assets\img\espacos\centro-cirurgico-2.jpg">
-        <img src="assets\img\espacos\consultorio-1.jpg">
-        <img src="assets\img\espacos\consultorio-2.jpg">
+        <h1>espaços da clínica</h1>
+        <section class="espaco">
+            <img src="assets\img\espacos\recepcao.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\famarcia-24h.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\consultorio-1.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\sala-de-nutricao.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\centro-cirurgico-1.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\internacao-1.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\ultrassom.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\raio-x.jpg">
+            <p>recepção</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\laboratorio.jpg">
+            <p>recepção</p>
+        </section>
+
     </section>
+    <script src="assets/script.js"></script>
     <section class="depoimentos">
         <section class="relatos">
             <p>"Eu adorei o atendimento da equipe. Todos muito atenciosos e preparados para atender nossos bichos de estimação. O Phillip ama ir e ser atendido pela tia Carla."</p>
