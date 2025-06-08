@@ -19,22 +19,17 @@ header {
 
 #marca {
     width: 100%;
-    height: 60px;
-    padding: 5px;
+    height: 55px;
+    padding: 10px;
     background-color: white;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-#marca a {
+#marca p{
     color: rgb(27, 60, 115);
-    text-decoration: none;
-}
-
-#marca a:hover {
-    color: rgb(255, 202, 212);
+    padding-top: 25px;
 }
 
 #marca img{
@@ -46,7 +41,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 7%;
+    margin-right: 20%;
 }
 
 #logo img {
@@ -54,8 +49,12 @@ header {
     width: 45px;
 }
 
+#logo a {
+    text-decoration: none;
+}
+
 #logo h1 {
-    color: rgb(27, 60, 115);
+    color:rgb(218, 173, 187);
     font-size: 35px;
     font-weight: 500;
     padding: 3px;
@@ -66,7 +65,7 @@ nav {
     height: 45px;
     background-color: white;
     border-bottom: 2px solid #efefef;
-    padding: 5px;
+    padding-right: 5px;
 }
 
 nav ul {
@@ -86,12 +85,13 @@ nav ul li {
 nav li a {
     display: block;
     color: rgb(27, 60, 115);
+    background-color: white;
     padding: 5px 35px;
     text-decoration: none;
 }
 
 nav ul li a:hover{
-    color: rgb(255, 64, 125);
+    color: rgb(218, 173, 187);
 }
 
 .menu-dropdown {
@@ -135,6 +135,14 @@ nav ul li a:hover{
 
 .menu-dropdown:hover {
     display: block;
+}
+
+.carousel{
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 body {
@@ -228,7 +236,7 @@ body {
     height: 250px;
 }
 
-footer {
+.links-e-imagem {
     height: 230px;
     width: 100vw;
     padding: 10px;
@@ -239,7 +247,7 @@ footer {
     align-items: center;
 }
 
-footer ul {
+.links-e-imagem ul {
     margin: 0px;
     height: 130px;
     box-sizing: border-box;
@@ -250,28 +258,28 @@ footer ul {
     padding: 10px 50px;
 }
 
-footer ul li {
+.links-e-imagem ul li {
     list-style: none;
 }
 
-footer ul li a {
+.links-e-imagem ul li a {
     color: rgb(0,0,0);
     text-decoration: none;
     font-size:medium;
 }
 
-footer .social {
+.links-e-imagem .social {
     display: flex;
     justify-items: space-evenly;
 }
 
-footer .social img {
+.links-e-imagem .social img {
     height: 40px;
     width: 40px;
     padding: 3px;
 }
 
-footer img#dog {
+.links-e-imagem img#dog {
     height: 200px;
     width: 200px;
     margin-left: 15px;
