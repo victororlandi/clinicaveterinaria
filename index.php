@@ -2,16 +2,23 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <title>petisco</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <title>Home</title>
 </head>
 <body>
     <header>
-        <section class="marca"> 
-            <a href="/index.php"><img src="assets/img/icons/logo-2.png"></a>
-            <a href="/index.php"><h1>petisco</h1></a>
+        <section id="anuncio">
+            <p>dia dos namorados chegando? cuide de quem mais te ama 🐶</p>
+        </section>
+        <section id="marca">
+                <a href="#">onde estamos</a>
+                    <section id="logo">
+                        <img src="assets/img/icons/logo-2.png">
+                        <h1>petisco</h1>
+                    </section>
+                <a href="view/login.php" alt="login"><img src="assets/img/icons/login.png"></a>
         </section>
         <nav>
             <ul>
@@ -37,7 +44,6 @@
                             </ul>
                     </section>
                     </li>
-                <li><a href="view/login.php">login</a></li>
             </ul>
         </nav>
     </header>

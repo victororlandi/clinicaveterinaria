@@ -1,39 +1,72 @@
-*{
+* {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
+    width: 100%;
     display: flex;
-    background-color: rgb(27, 60, 115);
-    height: 55px;
+    flex-direction: column;
 }
 
-.marca {
-    width: 30%;
+#anuncio {
+    height: 35px;
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 60, 115);
+    padding: 5px;
+}
+
+#marca {
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
-.marca img {
+#marca a {
+    color: rgb(27, 60, 115);
+    text-decoration: none;
+}
+
+#marca a:hover {
+    color: rgb(255, 202, 212);
+}
+
+#marca img{
+    height: 30px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7%;
+}
+
+#logo img {
     height: 45px;
     width: 45px;
 }
 
-.marca h1 {
-    color: rgb(255, 255, 255);
+#logo h1 {
+    color: rgb(27, 60, 115);
     font-size: 35px;
     font-weight: 500;
     padding: 3px;
 }
 
-.marca a {
-    text-decoration: none;
-}
-
 nav {
-    width: 70%;
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border-bottom: 2px solid #efefef;
+    padding: 5px;
 }
 
 nav ul {
@@ -41,7 +74,7 @@ nav ul {
     padding: 0;
     margin: 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -52,25 +85,24 @@ nav ul li {
 
 nav li a {
     display: block;
-    color: rgb(255, 255, 255);
-    padding: 15px 20px;
+    color: rgb(27, 60, 115);
+    padding: 5px 35px;
     text-decoration: none;
 }
 
 nav ul li a:hover{
-    background-color: rgb(64, 103, 158);
+    color: rgb(255, 64, 125);
 }
 
 .menu-dropdown {
     display: none; 
     position: absolute;
-    background-color: rgb(27, 60, 115);
+    border-bottom: 2px solid #efefef;
     top: 100%;
     padding: 0px;
     margin: 0px;
     z-index: 1;
     width: 100%;
-    font-size: 15px;
 }
 
 .menu-dropdown ul {
@@ -89,12 +121,11 @@ nav ul li a:hover{
 
 .menu-dropdown li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgb(27, 60, 115);
     text-decoration: none;
-    padding: 15px 20px;
-    height: 50px;
     width: 100%;
     margin: 0px;
+    padding-top: 10px;
     box-sizing: border-box;
 }
 
