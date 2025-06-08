@@ -18,7 +18,7 @@ if (!empty ($_POST['inputNomeCompleto']) && !empty ($_POST['inputCPF'])
 
     inserirTutor($NomeCompleto, $CPF, $DataNascimento, $Telefone, $Endereco, $Email, $Senha);
 
-    header('Location:../view/cadastro-tutores');
+    header('Location:../view/cadastro-tutores.php');
     
     die();
 } 
@@ -36,7 +36,7 @@ else if (!empty ($_POST['inputNomeCompleto']) && !empty ($_POST['inputCPF'])
 
     inserirTalento($NomeCompleto, $CPF, $AreaInteresse, $Telefone, $Endereco, $Email);
 
-    header('Location:../view/cadastro-talentos');
+    header('Location:../view/cadastro-talentos.php');
 
     die();
 }
@@ -54,7 +54,7 @@ else if (!empty ($_POST['inputNome']) && !empty ($_POST['inputTipo'])
 
     inserirAnimal($Nome, $Tipo, $Idade, $Peso, $Tutor, $Email);
 
-    header('Location:../view/cadastro-animais');
+    header('Location:../view/cadastro-animais.php');
 
     die();
 }
@@ -75,7 +75,7 @@ else if (!empty ($_POST['inputPet']) && !empty ($_POST['inputTutor'])
 
     inserirHistorico($Pet, $Tutor, $DataRegistro, $Diagnostico, $TratamentoPrescrito, $Medicamentos, $VeterinarioResponsavel, $AnexarArquivos);
 
-    header('Location:../view/cadastro-historico');
+    header('Location:../view/cadastro-historico.php');
     
     die();
 }
@@ -95,7 +95,7 @@ else if (!empty ($_POST['inputPet']) && !empty ($_POST['inputVacina'])
 
     AgendarVacinacao($Pet, $Vacina, $DataAplicacao, $DataProximaDose, $VeterinarioResponsavel, $LoteVacina, $Tutor);
 
-    header('Location:../view/agendamento-vacinacao');
+    header('Location:../view/agendamento-vacinacao.php');
     
     die();
 }
@@ -113,7 +113,7 @@ else if (!empty ($_POST['inputPet']) && !empty ($_POST['inputTutor'])
 
     AgendarConsulta($Pet, $Tutor, $DataHoraConsulta, $MotivoConsulta, $VeterinarioResponsavel, $Obervacoes);
 
-    header('Location:../view/agendamento-consulta');
+    header('Location:../view/agendamento-consulta.php');
     
     die();
 }
