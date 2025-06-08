@@ -138,15 +138,99 @@ nav ul li a:hover{
 }
 
 .carousel{
-    width: 95%;
-    margin-left: 2.5%;
+    width: 100%; 
+    height: 580px;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+}
+
+.carousel img {
+    height: 580px;
+}
+
+img.propaganda{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
     background-color: rgb(255,255,255);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  gap: 20px;
+  padding: 10px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* Estilos para o Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+.modal-content {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  margin-top: 5%;
+  transform-origin: center center;
+  transition: transform 0.25s ease;
+}
+
+/* Botão de fechar */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Controles de zoom */
+.zoom-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+.zoom-controls button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* Efeito hover para imagens do grid */
+.grid-container img {
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 250px;
+  border-radius: 10%;
+}
+
+.grid-container img:hover {
+  transform: scale(1.05);
 }
 
 .formulario-img-lateral {

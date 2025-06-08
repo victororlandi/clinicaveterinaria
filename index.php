@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/style.css">
+        <script src="assets/script.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -50,36 +51,43 @@
         </nav>
     </header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/img/carrossel/2.png" alt="First slide">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/carrossel/2.png" alt="First slide">
+                </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/carrossel/3.png" alt="Second slide">
             </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/img/carrossel/3.png" alt="Second slide">
+            <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/carrossel/4.png" alt="Third slide">  
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/carrossel/5.png" alt="Fourth slide">  
+            </div>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/img/carrossel/4.png" alt="Third slide">  
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/img/carrossel/5.png" alt="Fourth slide">  
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-  </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+    <img class="propaganda" src="assets\img\propaganda\7.png">
+    <section class="grid-container">
+        <img src="assets\img\espacos\centro-cirurgico-1.jpg">
+        <img src="assets\img\espacos\centro-cirurgico-2.jpg">
+        <img src="assets\img\espacos\consultorio-1.jpg">
+        <img src="assets\img\espacos\consultorio-2.jpg">
+    </section>
     <section class="depoimentos">
         <section class="relatos">
             <p>"Eu adorei o atendimento da equipe. Todos muito atenciosos e preparados para atender nossos bichos de estimação. O Phillip ama ir e ser atendido pela tia Carla."</p>
