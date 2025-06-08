@@ -89,35 +89,35 @@
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\famarcia-24h.jpg">
-            <p>recepção</p>
+            <p>farmácia 24 horas</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\consultorio-1.jpg">
-            <p>recepção</p>
+            <p>consultório</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\sala-de-nutricao.jpg">
-            <p>recepção</p>
+            <p>sala de nutrição</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\centro-cirurgico-1.jpg">
-            <p>recepção</p>
+            <p>centro cirúrgico</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\internacao-1.jpg">
-            <p>recepção</p>
+            <p>sala de internação</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\ultrassom.jpg">
-            <p>recepção</p>
+            <p>sala de ultrassom</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\raio-x.jpg">
-            <p>recepção</p>
+            <p>sala de raio-x</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\laboratorio.jpg">
-            <p>recepção</p>
+            <p>laboratório</p>
         </section>
 
     </section>
