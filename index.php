@@ -10,8 +10,8 @@
 <body>
     <header>
         <section class="marca"> 
-            <a href="index.php"><img src="assets/img/icons/logo-2.png"></a>
-            <a href="index.php"><h1>petisco</h1></a>
+            <a href="/index.php"><img src="assets/img/icons/logo-2.png"></a>
+            <a href="/index.php"><h1>petisco</h1></a>
         </section>
         <nav>
             <ul>

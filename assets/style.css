@@ -6,7 +6,7 @@
 header {
     display: flex;
     background-color: rgb(27, 60, 115);
-    height: 50px;
+    height: 55px;
 }
 
 .marca {
@@ -23,6 +23,9 @@ header {
 
 .marca h1 {
     color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 500;
+    padding: 3px;
 }
 
 .marca a {
@@ -50,9 +53,8 @@ nav ul li {
 nav li a {
     display: block;
     color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-decoration: none;
-    height: 50px;
 }
 
 nav ul li a:hover{
