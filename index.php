@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>home</title>
 </head>
 <body>
     <header>
@@ -41,8 +41,8 @@
                         <a href="#" class="botao-dropdown">agendamentos</a>
                         <section class="menu-dropdown">
                             <ul>
-                                <li><a href="view/agendamento-consulta.php">consulta</a></li>
-                                <li><a href="view/agendamento-vacinacao.php">hospedagem</a></li>
+                                <li><a href="view/agendamentos-consulta.php">consulta</a></li>
+                                <li><a href="view/agendamentos-vacinacao.php">vacinação</a></li>
                             </ul>
                         </section>
                     </li>
@@ -80,7 +80,11 @@
             <span class="sr-only"></span>
         </a>
     </div>
-    <img class="propaganda" src="assets\img\propaganda\7.png">
+    <section class="propaganda">
+        <a href="#">
+            <img src="assets\img\propaganda\7.png">
+        </a>
+    </section>
     <section class="grid-container">
         <h1>espaços da clínica</h1>
         <section class="espaco">
@@ -93,7 +97,11 @@
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\consultorio-1.jpg">
-            <p>consultório</p>
+            <p>consultório - 1</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\consultorio-2.jpg">
+            <p>consultório - 2</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\sala-de-nutricao.jpg">
@@ -101,11 +109,19 @@
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\centro-cirurgico-1.jpg">
-            <p>centro cirúrgico</p>
+            <p>centro cirúrgico - 1</p>
+        </section>
+            <section class="espaco">
+            <img src="assets\img\espacos\centro-cirurgico-2.jpg">
+            <p>centro cirúrgico - 2</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\internacao-1.jpg">
-            <p>sala de internação</p>
+            <p>sala de internação - 1</p>
+        </section>
+        <section class="espaco">
+            <img src="assets\img\espacos\internacao-2.jpg">
+            <p>sala de internação - 2</p>
         </section>
         <section class="espaco">
             <img src="assets\img\espacos\ultrassom.jpg">
