@@ -7,7 +7,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../assets/style.css">
-    <title>consultas</title>
+    <title>agende consultas</title>
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
                         <a href="/petisco/index.php"><img src="../assets/img/icons/logo-2.png"></a>
                         <a href="/petisco/index.php"><h1>petisco</h1></a>
                     </section>
-                <a href="view/login.php" alt="login"><img src="../assets/img/icons/login.png"></a>
+                <a href="login.php" alt="login"><img src="../assets/img/icons/login.png"></a>
         </section>
         <nav>
             <ul>
