@@ -85,6 +85,74 @@
             <img src="assets\img\propaganda\7.png">
         </a>
     </section>
+    <section class="sobre-clinica">
+        <div class="container">
+            <section class="sobre-item">
+                <h3>nossa história</h3>
+                <div class="texto-destaque">
+                    <p>fundada em 2010 por <strong>karina favareto</strong> e <strong>victor orlandi</strong>, a petisco começou como um pequeno consultório no coração do bairro. hoje, somos referência em cuidados animais com uma abordagem humanizada!</p>
+                    <p>nosso maior orgulho? o <strong>programa petisco na comunidade</strong> que já atendeu mais de 5.000 animais gratuitamente.</p>
+                </div>
+                <img src="assets/img/fachada.jpg" alt="Fachada da clínica" class="img-redonda">
+            </section>
+
+            <section class="sobre-item reverse">
+                <div class="texto-destaque">
+                    <h3>nossa missão</h3>
+                    <p class="destaque-azul">"oferecer medicina veterinária com <strong>carinho</strong>, <strong>ética</strong> e <strong>alegria</strong> para prolongar a vida feliz dos seus melhores amigos."</p>
+                </div>
+                <img src="assets/img/missao.jpg" alt="Cachorro sendo atendido" class="img-sombra">
+            </section>
+
+            <section class="horarios">
+                <h3>horário de funcionamento</h3>
+                <ul class="lista-horarios">
+                    <li>
+                        <span class="dia">segunda a sexta</span>
+                        <span class="horario">08h às 20h</span>
+                        <span class="obs">(plantão até 22h)</span>
+                    </li>
+                    <li class="destaque">
+                        <span class="dia">sábados</span>
+                        <span class="horario">09h às 16h</span>
+                    </li>
+                    <li>
+                        <span class="dia">domingos/feriados</span>
+                        <span class="horario">10h às 14h</span>
+                        <span class="obs">(somente emergências)</span>
+                    </li>
+                </ul>
+                <p class="aviso">* atendimento 24h para emergências</p>
+            </section>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <h2 class="titulo-depoimentos">nossos clientes</h2>
+        
+        <div class="depoimentos-grid">
+            <section class="relato">
+                <div class="balao-fala">"eu adorei o atendimento da equipe. todos muito atenciosos e preparados para atender nossos bichos de estimação. o phillip ama ir e ser atendido pela tia carla."</div>
+                <h6 class="autor">joana jones</h6>
+            </section>
+            
+            <section class="relato">
+                <div class="balao-fala">"melhor clínica veterinária em prudente. serviço rápido e de qualidade. o jorginho adora tomar banho e interagir com os aumigos."</div>
+                <h6 class="autor">maria da silva</h6>
+            </section>
+            
+            <section class="relato">
+                <div class="balao-fala">"primeira clínica em que meu dog se sentiu confortável. ele adora ir toda semana. o carlão gosta de bater papo e lanchar com os demais."</div>
+                <h6 class="autor">tião gurgel</h6>
+            </section>
+            
+            <section class="relato">
+                <div class="balao-fala">"todos os bichos recebem atendimento vip. meu gato vai e não quer voltar para casa. um dia ele fugiu e foi parar lá na clínica."</div>
+                <h6 class="autor">josé santos</h6>
+            </section>
+        </div>
+    </section>
+
     <section class="grid-container">
         <h1>espaços da clínica</h1>
         <section class="espaco">
@@ -135,26 +203,8 @@
             <img src="assets\img\espacos\laboratorio.jpg">
             <p>laboratório</p>
         </section>
-
     </section>
     <script src="assets/script.js"></script>
-    <section class="depoimentos">
-        <section class="relatos">
-            <p>"Eu adorei o atendimento da equipe. Todos muito atenciosos e preparados para atender nossos bichos de estimação. O Phillip ama ir e ser atendido pela tia Carla."</p>
-            <h6>Joana Jones</h6>
-        </section>
-        <section class="relatos">
-            <p>"Melhor clínica veterinária em Prudente. Serviço rápido e de qualidade. O Jorginho adora tomar banho e interagir com os aumigos.</p>
-            <h6>Maria da Silva</h6>
-        </section>
-        <section class="relatos">
-            <p>"Primeira clínica em que meu dog se sentiu confortável. Ele adora ir toda semana. O Carlão gosta de bater papo e lanchar com os demais. Recomendo 100%."</p>
-            <h6>Tião Gurgel</h6>
-        </section>
-        <section class="relatos">
-            <p>"Todos os bichos recebem atendimento VIP. Meu gato vai não quer voltar para casa. Um dia ele fugiu e foi parar lá na clínica. Experiência nota 10."</p>
-            <h6>José Santos</h6>
-        </section>
     </section>
     <section class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

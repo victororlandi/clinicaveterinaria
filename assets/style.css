@@ -153,108 +153,406 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 
-
-
 body {
     background-color:#ffffff;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
-  gap: 20px;
-  padding: 10px;
-  width: 70%;
-  margin: 0 auto;
+/* --- Estilos Gerais --- */
+.sobre-clinica, .depoimentos {
+    background: white;
+    padding: 40px 0;
 }
 
-.grid-container h1 {
-    grid-column: 1 / 5;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.titulo-depoimentos {
     text-align: center;
-    color: #333333;
-    padding-top: 10px;
+    color: #1b3c73;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h2.titulo-depoimentos {
+    padding-bottom: 20px;
+}
+
+h2.titulo-depoimentos::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #ff407d;
+    border-radius: 2px;
+}
+
+/* --- Seção Sobre --- */
+.sobre-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.texto-destaque {
+    flex: 1;
+    line-height: 1.6;
+    color: #555;
+}
+
+.texto-destaque p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.destaque-azul {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #40679e;
+    font-style: italic;
+    color: #1b3c73;
+}
+
+.img-redonda {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #efefef;
+    box-shadow: 0 10px 20px rgba(255, 122, 125, 0.2);
+}
+
+.img-sombra {
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(64, 103, 158, 0.2);
+}
+
+.horarios {
+    background: #f8f9fa;
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.lista-horarios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-horarios li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffcad4;
+}
+
+.dia {
+    flex: 1;
+    color: #1b3c73;
+    font-weight: bold;
+}
+
+.horario {
+    flex: 0 0 100px;
+    text-align: right;
+    color: #40679e;
+}
+
+.obs {
+    flex: 0 0 150px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #1b3c73;
+}
+
+.lista-horarios .destaque {
+    color: #1b3c73;
+}
+
+.aviso {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1b3c73;
+    background: #ffcad4;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.relato {
+    background: #efefef;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.relato:hover {
+    transform: translateY(-10px);
+}
+
+.balao-fala {
+    background: white;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    color: #1b3c73;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.balao-fala::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: white transparent;
+}
+
+.autor {
+    color: #1b3c73;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+    .sobre-item, .reverse {
+        flex-direction: column;
+    }
+    
+    .img-redonda, .img-sombra {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .depoimentos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos Gerais */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px 5%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-transform: lowercase;
+}
+
+/* Título */
+.grid-container h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #1b3c73;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    position: relative;
+}
+
+.grid-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #ff407d;
+    border-radius: 2px;
+}
+
+/* Cards dos Espaços */
+.grid-container .espaco {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(27, 60, 115, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-container img {
     width: 100%;
-    height: 250px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 15px 15px 0 0;
     cursor: pointer;
-}
-
-.grid-container .espaco{
-    background-color: #40679e;
-    border-radius: 10%;
-}
-
-.grid-container .espaco p{
-    text-align: center;
-    font-size: 20px;
-    color: #efefef;
-    font-weight:480;
-    margin: 3px;
-}
-
-.grid-container .espaco:hover {
-    transform: scale(1.05);
     transition: transform 0.3s;
 }
 
-/* Estilos para o Modal */
+.grid-container .espaco p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #1b3c73;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+/* Efeitos de Hover */
+.grid-container .espaco:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 122, 125, 0.2);
+}
+
+.grid-container .espaco:hover img {
+    transform: scale(1.05);
+}
+
+/* Decoração dos Cards */
+.grid-container .espaco::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, #ff407d, #ffcad4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .grid-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .grid-container img {
+        height: 150px;
+    }
+}
+
+/* Estilos do Modal - Versão Compacta */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: auto;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 60, 115, 0.9);
+    z-index: 1000;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .modal-content {
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
-  margin: auto;
-  margin-top: 5%;
-  transform-origin: center center;
-  transition: transform 0.25s ease;
+    display: block;
+    max-width: 70%;
+    max-height: 70vh;
+    margin: 5% auto;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 5px solid white;
 }
 
-/* Botão de fechar */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #efefef;
-  font-size: 40px;
-  font-weight: lighter;
-  cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s;
 }
 
-/* Controles de zoom */
+.close:hover {
+    transform: scale(1.2);
+    color: #ff407d;
+}
+
 .zoom-controls {
-  position: fixed;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1001;
-  display: flex;
-  gap: 10px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .zoom-controls button {
-  background-color: #efefef;
-  color:rgb(64, 103, 158);
-  width: 50px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
+    background: #1b3c73;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom-controls button:hover {
+    background: #ff407d;
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 90%;
+        max-height: 80vh;
+    }
+    
+    .zoom-controls {
+        bottom: 20px;
+        padding: 8px 15px;
+    }
+    
+    .zoom-controls button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .close {
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+    }
 }
 
 .formulario-img-lateral {
@@ -265,27 +563,26 @@ body {
 }
 
 .formulario-img-lateral img {
-    border-radius: 30px;
     height: 750px;
     width: auto;
 }
 
 .formulario-img-lateral .formulario {
-    background-color: rgb(213, 211, 212);
-    height: 750px;
-    width: 25%;
+    background-color: rgb(64, 103, 158);
+    width: 50%;
+    margin-left: 10%;
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 30px;
-    padding: 20px 90px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
 }
 
 .formulario-img-lateral .formulario h1 {
     text-align: center;
-    padding: 10px;
-    color: rgb(99, 3, 46);
+    padding: 15px;
+    color: rgb(245,245,245);
 }
 
 .formulario-img-lateral .formulario form {
@@ -295,24 +592,49 @@ body {
     align-items: center;
 }
 
-
-.formulario-img-lateral .formulario form button{
-    padding: 5px 80px;
-    color: rgb(255,255,255);
-    background-color:rgb(99,3,46);
-}
-
 .formulario-img-lateral .formulario form input{
     padding: 20px 25px;
     border-style: solid;
     border-color: rgb(245,245,245);
     border-radius: 10px;
-    width: 100%;
+    width: 85%;
     height: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.formulario-img-lateral .formulario form button{
+    padding: 10px 80px;
+    font-size: larger;
+    color: rgb(255,255,255);
+    background-color: rgb(218, 173, 187);
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 30px;
+}
+
+.formulario-img-lateral .formulario form p {
+    width: 100%;
+    text-align: left;
+    padding: 0px 50px;
+    color: rgb(245,245,245);
+}
+
+.formulario-img-lateral .links-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-img-lateral a {
+    text-decoration: none;
+    color: #efefef;
+    text-align: center;
+    padding: 5px 40px;
+    font-size: 18px;
+    text-shadow: #333333;
 }
 
 .bichos-atendidos {

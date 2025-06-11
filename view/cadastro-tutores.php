@@ -56,20 +56,24 @@
         </section>
     <section class="formulario-img-lateral">
         <section class="formulario">
-            <h1>CADASTRO DE TUTOR</h1>
+            <h1>cadastro de tutor</h1>
             <form method="POST" action="../processamento/processamento.php">
-                <input type="text" placeholder="Nome Completo" name="inputNomeCompleto">
+                <input type="text" placeholder="nome completo" name="inputNomeCompleto">
                 <input type="text" placeholder="CPF" name="inputCPF">
-                <input type="date" placeholder="Data de Nascimento" name="inputDataNascimento">
-                <input type="text" placeholder="Telefone" name="inputTelefone">
-                <input type="text" placeholder="Endereço" name="inputEndereco">
-                <input type="email" placeholder="E-mail" name="inputEmail">
-                <input type="password" placeholder="Senha" name="inputSenha">
+                <p>data de nascimento:</p>
+                <input type="date" placeholder="data de nascimento" name="inputDataNascimento">
+                <input type="text" placeholder="telefone" name="inputTelefone">
+                <input type="text" placeholder="endereço" name="inputEndereco">
+                <input type="email" placeholder="e-mail" name="inputEmail">
+                <input type="password" placeholder="senha" name="inputSenha">
                 <button type="submit">Cadastrar</button>
             </form>
-            <h3><a href="ver-tutores.php">Visuzalizar Tutores</a></h3>
+            <section class="links-formulario">
+                <a href="login.php">já tem cadastro? faça o login</a>
+                <a href="ver-tutores.php">conheça os outros tutores</a>
+            </section>
         </section>
-        <img id="cad-tutor" src="../assets/img/illustrations/JPG/26.jpg">
+        <img src="../assets/img/illustrations/PNG/21-cut.png">
     </section>
         <!--<pre>
         Campos:

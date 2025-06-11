@@ -54,6 +54,21 @@
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
+        <section class="formulario-img-lateral">
+        <section class="formulario">
+            <h1>CADASTRO DE ANIMAIS</h1>
+            <form method="POST" action="../processamento/processamento.php">
+                <input type="text" placeholder="Nome" name="inputNome">
+                <input type="text" placeholder="Tipo (Ex.: canino, réptil etc.)" name="inputTipo">
+                <input type="text" placeholder="Idade" name="inputIdade">
+                <input type="number" placeholder="Peso em Kg" name="inputPeso">
+                <input type="text" placeholder="Tutor" name="inputTutor">
+                <input type="email" placeholder="E-mail" name="inputEmail">
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
+    </section>
     <!--<pre>
         Campos:
         

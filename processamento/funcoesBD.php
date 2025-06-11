@@ -2,7 +2,7 @@
 
 function conectarBD(){
 
-    $conexao = mysqli_connect('localhost: 3308','root','','petisco');
+    $conexao = mysqli_connect('localhost','root','','petisco');
     return($conexao);
 }
 
