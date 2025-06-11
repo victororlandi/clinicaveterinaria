@@ -61,16 +61,16 @@
             <form method="POST" action="../processamento/processamento.php">
                 <input type="text" placeholder="Pet" name="inputPet">
                 <input type="text" placeholder="Tutor" name="inputTutor">
-                <label>Data e Hora da Consulta</label>
+                <p>Data e Hora da Consulta</p>
                 <input type="datetime-local" name="inputDataHoraConsulta">
                 <input type="text" placeholder="Motivo (vacinação, check-up, emergência, etc.)" name="inputMotivoConsulta">
                 <input type="text" placeholder="Veterinário Responsável" name="inputVeterinarioResponsavel">
                 <input type="text" placeholder="Observações" name="inputObservacoes">
-                <button type="submit">Agendar</button>
+                <button type="submit">agendar</button>
             </form>
-            <h3><a href="ver-agendamentos-consulta.php">Visuzalizar Agendamentos de Consulta</a></h3>
+            <a href="ver-agendamentos-consulta.php">Visualizar Agendamentos de Consulta</a>
         </section>
-        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
+        <img src="../assets/img/illustrations/PNG/25-cut.png">
     </section>
     <!-- <pre>
         Campos:

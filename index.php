@@ -90,7 +90,7 @@
             <section class="sobre-item">
                 <h3>nossa história</h3>
                 <div class="texto-destaque">
-                    <p>fundada em 2010 por <strong>karina favareto</strong> e <strong>victor orlandi</strong>, a petisco começou como um pequeno consultório no coração do bairro. hoje, somos referência em cuidados animais com uma abordagem humanizada!</p>
+                    <p>fundada em 2015 por <strong>karina favareto</strong> e <strong>victor orlandi</strong>, a petisco começou como um pequeno consultório no coração do bairro. hoje, somos referência em cuidados animais com uma abordagem humanizada!</p>
                     <p>nosso maior orgulho? o <strong>programa petisco na comunidade</strong> que já atendeu mais de 5.000 animais gratuitamente.</p>
                 </div>
                 <img src="assets/img/fachada.jpg" alt="Fachada da clínica" class="img-redonda">
@@ -154,7 +154,7 @@
     </section>
 
     <section class="grid-container">
-        <h1>espaços da clínica</h1>
+        <h1>nossa estrutura</h1>
         <section class="espaco">
             <img src="assets\img\espacos\recepcao.jpg">
             <p>recepção</p>

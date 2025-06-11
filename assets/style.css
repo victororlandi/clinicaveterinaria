@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
 }
 
 header {
@@ -198,7 +199,6 @@ h2.titulo-depoimentos::after {
     display: flex;
     align-items: center;
     gap: 40px;
-
 }
 
 .reverse {
@@ -555,6 +555,217 @@ h2.titulo-depoimentos::after {
     }
 }
 
+.sobre-nos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #1b3c73;
+}
+
+/* Títulos */
+.sobre-nos h2 {
+    font-size: 1.8rem;
+    color: #40679e;
+    border-bottom: 2px solid #ffcad4;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+/* História */
+.historia .conteudo-texto {
+    line-height: 1.6;
+}
+
+.destaque-azul {
+    background-color: rgba(64, 103, 158, 0.1);
+    padding: 20px;
+    border-left: 4px solid #40679e;
+    margin: 20px 0;
+}
+
+.img-float-right {
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 3px solid #ffcad4;
+}
+
+.lista-icones {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-icones li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.lista-icones li:before {
+    content: "🐾";
+    position: absolute;
+    left: 0;
+}
+
+/* Missão/Visão */
+.missao-visao {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.card-missao, .card-visao {
+    flex: 1;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card-missao {
+    background-color: #e1f5fe;
+    border-top: 5px solid #40679e;
+}
+
+.card-visao {
+    background-color: #fce4ec;
+    border-top: 5px solid #ff407d;
+}
+
+/* Números */
+.grid-numeros {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.destaque-numero {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff407d;
+    display: block;
+}
+
+/* Equipe */
+.grid-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.membro {
+    text-align: center;
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffcad4;
+    margin-bottom: 10px;
+}
+
+/* Estrutura */
+.galeria-espacos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.galeria-espacos img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.lista-check {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+}
+
+.lista-check li {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.lista-check li:before {
+    content: "✓";
+    color: #ff407d;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+.destaque {
+    background-color: #ffcad4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.historia, .equipe, .servicos {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.servicos ul {
+    columns: 2;
+    list-style-type: none;
+    padding: 0;
+}
+
+.servicos li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.servicos li:before {
+    content: "🐾";
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1b3c73;
+    color: white;
+    border-radius: 10px;
+}
+
+.missao-visao {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.missao, .visao {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.missao {
+    background-color: #e1f5fe;
+    border-left: 5px solid #40679e;
+}
+
+.visao {
+    background-color: #fce4ec;
+    border-left: 5px solid #ff407d;
+}
+
 .formulario-img-lateral {
     display: flex;
     flex-direction: row;
@@ -593,12 +804,12 @@ h2.titulo-depoimentos::after {
 }
 
 .formulario-img-lateral .formulario form input{
-    padding: 20px 25px;
+    padding: 10px 15px;
     border-style: solid;
     border-color: rgb(245,245,245);
     border-radius: 10px;
     width: 85%;
-    height: 5px;
+
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -634,33 +845,14 @@ h2.titulo-depoimentos::after {
     text-align: center;
     padding: 5px 40px;
     font-size: 18px;
-    text-shadow: #333333;
+    font-weight: 500;
 }
 
 .bichos-atendidos {
     height: 300px;
     width: 100vw;
 }
-/*
-.depoimentos {
-    height: 300px;
-    display: grid;
-    grid-template-columns: 240px 240px 240px 240px;
-    grid-template-rows: 250px;
-    gap: 40px;
-    justify-content: center;
-}
 
-.depoimentos p {
-    border-style: solid;
-    border-radius: 20px;
-    border-color: rgba(114, 114, 114, 0.651);
-    border-width: 5px;
-    padding: 15px;
-    font-size:medium;
-    text-align: justify;
-}
-*/
 .mapa {
     margin: 0px;
     height: 250px;

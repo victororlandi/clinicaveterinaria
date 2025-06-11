@@ -60,7 +60,7 @@
             <form method="POST" action="../processamento/processamento.php">
                 <input type="text" placeholder="Pet" name="inputPet">
                 <input type="text" placeholder="Tutor" name="inputTutor">
-                <label>Data do Registro</label>
+                <p>Data do Registro</p>
                 <input type="date" placeholder="Data do Registro" name="inputDataRegistro">
                 <input type="text" placeholder="Diagnostico" name="inputDiagnostico">
                 <input type="text" placeholder="Tratamento Prescrito" name="inputTratamentoPrescrito">
@@ -71,9 +71,9 @@
                 <input type="file" name="inputAnexarArquivos">
                 <button type="submit">Cadastrar</button>
             </form>
-            <h3><a href="ver-historicos.php">Visuzalizar Historicos</a></h3>
+            <a href="ver-historicos.php">Visualizar Históricos</a>
         </section>
-        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
+        <img src="../assets/img/illustrations/PNG/06-cut.png">
     </section>
 
     <!--<pre>

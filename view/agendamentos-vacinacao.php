@@ -60,18 +60,18 @@
             <form method="POST" action="../processamento/processamento.php">
                 <input type="text" placeholder="Pet" name="inputPet">
                 <input type="text" placeholder="Vacina (raiva, V10, antirrábica, etc.)" name="inputVacina">
-                <label>Data de Aplicação</label>
+                <p>Data de Aplicação</p>
                 <input type="date" placeholder="Data de Aplicação" name="inputDataAplicacao">
-                <label>Data da Próxima Dose</label>
+                <p>Data da Próxima Dose</p>
                 <input type="date" placeholder="Data Próxima Dose" name="inputDataProximaDose">
                 <input type="text" placeholder="Veterinário Responsável" name="inputVeterinarioResponsavel">
                 <input type="text" placeholder="Lote da Vacina" name="inputLoteVacina">
                 <input type="text" placeholder="Tutor" name="inputTutor">
-                <button type="submit">Agendar</button>
+                <button type="submit">agendar</button>
             </form>
-            <h3><a href="ver-agendamentos-vacinacao.php">Visuzalizar Agendamentos de Vacinação</a></h3>
+            <a href="ver-agendamentos-vacinacao.php">Visualizar Agendamentos de Vacinação</a>
         </section>
-        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
+            <img src="../assets/img/illustrations/PNG/24-cut.png">
     </section>
     <!-- <pre>
         Campos:

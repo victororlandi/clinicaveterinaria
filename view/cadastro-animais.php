@@ -64,10 +64,10 @@
                 <input type="number" placeholder="Peso em Kg" name="inputPeso">
                 <input type="text" placeholder="Tutor" name="inputTutor">
                 <input type="email" placeholder="E-mail" name="inputEmail">
-                <button type="submit">Cadastrar</button>
+                <button type="submit">cadastrar</button>
             </form>
         </section>
-        <img id="cad-animais" src="../assets/img/illustrations/JPG/27.jpg">
+        <img src="../assets/img/illustrations/PNG/14-cut.png">
     </section>
     <!--<pre>
         Campos:
