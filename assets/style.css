@@ -332,7 +332,7 @@ h2.titulo-depoimentos::after {
 }
 
 .autor {
-    color: #1b3c73;
+    color: #ff407d;
     margin: 10px 0;
     font-size: 1.1rem;
 }
@@ -667,83 +667,6 @@ h2.titulo-depoimentos::after {
     margin-bottom: 10px;
 }
 
-/* Estrutura */
-.galeria-espacos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.galeria-espacos img {
-    width: 100%;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.lista-check {
-    list-style: none;
-    padding: 0;
-    columns: 2;
-}
-
-.lista-check li {
-    padding: 10px 0;
-    position: relative;
-    padding-left: 30px;
-}
-
-.lista-check li:before {
-    content: "✓";
-    color: #ff407d;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-.destaque {
-    background-color: #ffcad4;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    font-style: italic;
-}
-
-.historia, .equipe, .servicos {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-}
-
-.servicos ul {
-    columns: 2;
-    list-style-type: none;
-    padding: 0;
-}
-
-.servicos li {
-    padding: 8px 0;
-    position: relative;
-    padding-left: 25px;
-}
-
-.servicos li:before {
-    content: "🐾";
-    position: absolute;
-    left: 0;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #1b3c73;
-    color: white;
-    border-radius: 10px;
-}
-
 .missao-visao {
     display: flex;
     gap: 20px;
@@ -827,9 +750,7 @@ footer {
 }
 
 .formulario-img-lateral .formulario form p {
-    width: 100%;
-    text-align: left;
-    padding: 0px 50px;
+    text-align: center;
     color: rgb(245,245,245);
 }
 

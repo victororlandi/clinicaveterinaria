@@ -64,7 +64,7 @@
                 <p>o nome petisco reflete nossa filosofia: pequenos cuidados diários que fazem toda a diferença na saúde dos animais, como um carinho que alimenta a alma.</p>
             </div>
             
-            <img src="assets\img\equipe-fundadores.jpg" alt="Fundadores da Petisco" class="img-float-right">
+            <img src="..\assets\img\equipe-fundadores.jpg" alt="Fundadores da Petisco" class="img-float-right">
             
             <p>em 2018, criamos o <strong>programa petisco na comunidade</strong>, que já realizou:</p>
             <ul class="lista-icones">
