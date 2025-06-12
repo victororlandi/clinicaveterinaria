@@ -89,7 +89,7 @@
         <h2>petisco em números</h2>
         <div class="grid-numeros">
             <div class="numero-item">
-                <span class="destaque-numero">8</span>
+                <span class="destaque-numero">10</span>
                 <p>anos de história</p>
             </div>
             <div class="numero-item">

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require "funcoesBD.php";
+require_once "funcoesBD.php";
 
 if (!empty ($_POST['inputNomeCompleto']) && !empty ($_POST['inputCPF']) 
     && !empty ($_POST['inputDataNascimento']) && !empty ($_POST['inputTelefone'])

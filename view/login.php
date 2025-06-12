@@ -55,6 +55,29 @@
             </a>
         </section>
     </header>
+        <section class="container">
+        <div class="login-container">
+            <div class="login-card">
+                <h2>acesse sua conta</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="email">e-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="senha">senha</label>
+                        <input type="password" id="senha" required>
+                    </div>
+                    <button type="submit" class="btn-login">entrar</button>
+                </form>
+                <div class="links">
+                    <a href="#">esqueci minha senha</a>
+                    <span> | </span>
+                    <a href="#">criar conta</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>

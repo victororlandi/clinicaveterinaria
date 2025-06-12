@@ -54,11 +54,86 @@
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <pre>
-        grid layout com ícones estáticos
-        ao final, uma frase:
-        Curtiu? Entre em contato (redireciona pro zap web) ou faça seu cadastro (redireciona pro cadastro de tutor).
-    </pre>
+    <section class="container">
+        <h2>nossos serviços</h2>
+        <div class="servicos-grid">
+            <div class="servico-card">
+                <div class="servico-img">🩺</div>
+                <div class="servico-info">
+                    <h3>consulta clínica</h3>
+                    <p>avaliação completa da saúde do seu pet com nossos veterinários.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">💉</div>
+                <div class="servico-info">
+                    <h3>vacinação</h3>
+                    <p>protocolos vacinais personalizados para máxima proteção.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">🦷</div>
+                <div class="servico-info">
+                    <h3>odontologia</h3>
+                    <p>limpeza, extrações e tratamentos dentários especializados.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">🧪</div>
+                <div class="servico-info">
+                    <h3>exames laboratoriais</h3>
+                    <p>análises clínicas para diagnósticos precisos.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">📷</div>
+                <div class="servico-info">
+                    <h3>diagnóstico por imagem</h3>
+                    <p>raio-x e ultrassom com tecnologia digital.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">✂️</div>
+                <div class="servico-info">
+                    <h3>banho e tosa</h3>
+                    <p>cuidados estéticos com produtos hipoalergênicos.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">🏥</div>
+                <div class="servico-info">
+                    <h3>cirurgias</h3>
+                    <p>procedimentos cirúrgicos em centro especializado.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">🥗</div>
+                <div class="servico-info">
+                    <h3>nutrição</h3>
+                    <p>planos alimentares personalizados para seu pet.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-img">🧘</div>
+                <div class="servico-info">
+                    <h3>fisioterapia</h3>
+                    <p>reabilitação e tratamentos para mobilidade.</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="navegacao-servicos">
+            <h2>conheça mais</h2>
+            <div class="nav-links">
+                <a href="ver-agendamentos-consulta.php" class="nav-link">consultas agendadas</a>
+                <a href="ver-agendamentos-vacinacao.php" class="nav-link">vacinações agendadas</a>
+                <a href="ver-animais.php" class="nav-link">pets</a>
+                <a href="ver-historicos.php" class="nav-link">histórico</a>
+                <a href="ver-talentos.php" class="nav-link">talentos</a>
+                <a href="ver-tutores.php" class="nav-link">tutores</a>
+            </div>
+        </section>
+</section>
     <section class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>

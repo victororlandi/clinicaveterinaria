@@ -54,18 +54,22 @@
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-        <!--<pre>
-        Campos:
 
-        Nome completo (obrigatório)
-        CPF (obrigatório, com validação)
-        Data de nascimento (obrigatório)
-        Telefone (obrigatório)
-        Endereço (Rua, número, complemento, CEP)
-        E-mail (obrigatório, com validação)
-        Senha (para acesso ao sistema, com confirmação)
-        <i>Ao clicar para enviar, o usuário é redirecionado para o Cadastro de Animais</i>
-    </pre>!-->
+            <section class="formulario-img-lateral">
+        <section class="formulario">
+            <h1>CADASTRO DE TALENTOS</h1>
+            <form method="POST" action="../processamento/processamento.php">
+                <input type="text" placeholder="Nome Completo" name="inputNomeCompleto">
+                <input type="text" placeholder="CPF" name="inputCPF">
+                <input type="text" placeholder="Área de Interesse" name="inputAreaInteresse">
+                <input type="text" placeholder="Telefone" name="inputTelefone">
+                <input type="text" placeholder="Endereço" name="inputEndereco">
+                <input type="email" placeholder="E-mail" name="inputEmail">
+                <button type="submit">envie seu currículo</button>
+            </form>
+        </section>
+        <img src="../assets/img/illustrations/PNG/13-cut.png">
+    </section>
     <section class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.6348838151825!2d-51.386619625905276!3d-22.139892510911558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9493f501254620eb%3A0x16bc508109c64255!2sFatec%20de%20Presidente%20Prudente!5e0!3m2!1spt-BR!2sbr!4v1747918682634!5m2!1spt-BR!2sbr" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
