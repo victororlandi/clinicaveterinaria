@@ -1,6 +1,6 @@
 <?php
 
-/*session_start();
+session_start();
 include('../processamento/conexao.php');
 
 $mysqli = conectarBD();
@@ -19,10 +19,10 @@ if (isset($_POST['inputEmailLogin']) && isset($_POST['inputSenhaLogin'])) {
         $sql_query = $mysqli->query($sql_code);
 
         if ($sql_query && $sql_query->num_rows == 1) {
-            $usuario = $sql_query->fetch_assoc();
+            $cadastrotutores = $sql_query->fetch_assoc();
 
-            $_SESSION['Codigo'] = $usuario['Codigo'];
-            $_SESSION['NomeCompleto'] = $usuario['NomeCompleto'];
+            $_SESSION['inputEmailLogin'] = $cadastrotutores['Email'];
+            $_SESSION['inputSenhaLogin'] = $cadastrotutores['Senha'];
 
             header("Location: ../index.php");
             exit();
@@ -30,7 +30,7 @@ if (isset($_POST['inputEmailLogin']) && isset($_POST['inputSenhaLogin'])) {
             echo "Falha ao logar! E-mail ou senha incorretos.";
         }
     }
-}*/
+}
 ?>
 
 <!DOCTYPE html>
