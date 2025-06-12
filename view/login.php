@@ -1,3 +1,38 @@
+<?php
+
+/*session_start();
+include('../processamento/conexao.php');
+
+$mysqli = conectarBD();
+
+if (isset($_POST['inputEmailLogin']) && isset($_POST['inputSenhaLogin'])) {
+
+    if (strlen($_POST['inputEmailLogin']) == 0) {
+        echo "Preencha seu e-mail";
+    } else if (strlen($_POST['inputSenhaLogin']) == 0) {
+        echo "Preencha sua senha";
+    } else {
+        $inputEmailLogin = $mysqli->real_escape_string($_POST['inputEmailLogin']);
+        $inputSenhaLogin = $mysqli->real_escape_string($_POST['inputSenhaLogin']);
+
+        $sql_code = "SELECT * FROM cadastrotutores WHERE Email = '$inputEmailLogin' AND Senha = '$inputSenhaLogin'";
+        $sql_query = $mysqli->query($sql_code);
+
+        if ($sql_query && $sql_query->num_rows == 1) {
+            $usuario = $sql_query->fetch_assoc();
+
+            $_SESSION['Codigo'] = $usuario['Codigo'];
+            $_SESSION['NomeCompleto'] = $usuario['NomeCompleto'];
+
+            header("Location: ../index.php");
+            exit();
+        } else {
+            echo "Falha ao logar! E-mail ou senha incorretos.";
+        }
+    }
+}*/
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -59,14 +94,14 @@
         <div class="login-container">
             <div class="login-card">
                 <h2>acesse sua conta</h2>
-                <form>
+                <form method="POST" action="">
                     <div class="input-group">
                         <label for="email">e-mail</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="inputEmailLogin" required>
                     </div>
                     <div class="input-group">
                         <label for="senha">senha</label>
-                        <input type="password" id="senha" required>
+                        <input type="password" id="senha" name="inputSenhaLogin" required>
                     </div>
                     <button type="submit" class="btn-login">entrar</button>
                 </form>
