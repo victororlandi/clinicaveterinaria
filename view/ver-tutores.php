@@ -60,22 +60,24 @@ require "../processamento/funcoesBD.php";
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <section class="ver-dados">
-        <section class="ver-dados-box">
-            <h1>Tutores</h1>
-            <?php
-                $listaTutores = retornarTutores();
-                while($cadastrotutores = mysqli_fetch_assoc($listaTutores)){
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2>" . $cadastrotutores["NomeCompleto"] . " " . "</h2>";
-                    echo "<p>CPF: " . $cadastrotutores["CPF"] . "</p>";
-                    echo "<p>Data de Nascimento: " . $cadastrotutores["DataNascimento"] . "</p>";
-                    echo "<p>Telefone: " . $cadastrotutores["Telefone"] . "</p>";
-                    echo "<p>Endereço: " . $cadastrotutores["Endereco"] . "</p>";
-                    echo "<p>E-mail: " . $cadastrotutores["Email"] . "</p>";
-                    echo "</section>";
-                }
-            ?>
+    <section class="container">
+        <section class="ver-dados">
+            <section class="ver-dados-box">
+                <h1>Tutores</h1>
+                <?php
+                    $listaTutores = retornarTutores();
+                    while($cadastrotutores = mysqli_fetch_assoc($listaTutores)){
+                        echo "<section class=\"conteudo-bloco\">";
+                        echo "<h2>" . $cadastrotutores["NomeCompleto"] . " " . "</h2>";
+                        echo "<strong><p>CPF: </strong>" . $cadastrotutores["CPF"] . "</p>";
+                        echo "<strong><p>Data de Nascimento: </strong>" . $cadastrotutores["DataNascimento"] . "</p>";
+                        echo "<strong><p>Telefone: </strong>" . $cadastrotutores["Telefone"] . "</p>";
+                        echo "<strong><p>Endereço: </strong>" . $cadastrotutores["Endereco"] . "</p>";
+                        echo "<strong><p>E-mail: </strong>" . $cadastrotutores["Email"] . "</p>";
+                        echo "</section>";
+                    }
+                ?>
+            </section>
         </section>
     </section>
     <footer>

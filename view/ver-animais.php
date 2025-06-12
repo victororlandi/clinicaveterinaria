@@ -60,22 +60,24 @@ require "../processamento/funcoesBD.php";
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <section class="ver-dados">
-        <section class="ver-dados-box">
-            <h1>Animais</h1>
-            <?php
-                $listaAnimais = retornarAnimais();
-                while($cadastroanimais = mysqli_fetch_assoc($listaAnimais)){
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2>" . $cadastroanimais["Codigo"] . " " . $cadastroanimais["Nome"] . " " . "</h2>";
-                    echo "<p>Tipo: " . $cadastroanimais["Tipo"] . "</p>";
-                    echo "<p>Idade: " . $cadastroanimais["Idade"] . "</p>";
-                    echo "<p>Peso: " . $cadastroanimais["Peso"] . "</p>";
-                    echo "<p>Tutor: " . $cadastroanimais["Tutor"] . "</p>";
-                    echo "<p>E-mail: " . $cadastroanimais["Email"] . "</p>";
-                    echo "</section>";
-                }
-            ?>
+    <section class="container">
+        <section class="ver-dados">
+            <section class="ver-dados-box">
+                <h1>Animais</h1>
+                <?php
+                    $listaAnimais = retornarAnimais();
+                    while($cadastroanimais = mysqli_fetch_assoc($listaAnimais)){
+                        echo "<section class=\"conteudo-bloco\">";
+                        echo "<h2>" . $cadastroanimais["Codigo"] . " " . $cadastroanimais["Nome"] . " " . "</h2>";
+                        echo "<strong><p>Tipo: </strong>" . $cadastroanimais["Tipo"] . "</p>";
+                        echo "<strong><p>Idade: </strong>" . $cadastroanimais["Idade"] . "</p>";
+                        echo "<strong><p>Peso: </strong>" . $cadastroanimais["Peso"] . "</p>";
+                        echo "<strong><p>Tutor: </strong>" . $cadastroanimais["Tutor"] . "</p>";
+                        echo "<strong><p>E-mail: </strong>" . $cadastroanimais["Email"] . "</p>";
+                        echo "</section>";
+                    }
+                ?>
+            </section>
         </section>
     </section>
     <section class="mapa">

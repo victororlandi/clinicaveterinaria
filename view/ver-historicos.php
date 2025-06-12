@@ -60,24 +60,26 @@ require "../processamento/funcoesBD.php";
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <section class="ver-dados">
-        <section class="ver-dados-box">
-            <h1>Históricos</h1>
-            <?php
-                $listaHistoricos = retornarHistoricos();
-                while($cadastrohistorico = mysqli_fetch_assoc($listaHistoricos)){
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2>" . $cadastrohistorico["Codigo"] . " " . $cadastrohistorico["Pet"] . " " . "</h2>";
-                    echo "<p>Tutor: " . $cadastrohistorico["Tutor"] . "</p>";
-                    echo "<p>Data de Registro: " . $cadastrohistorico["DataRegistro"] . "</p>";
-                    echo "<p>Diagnóstico: " . $cadastrohistorico["Diagnostico"] . "</p>";
-                    echo "<p>Tratamento Prescrito: " . $cadastrohistorico["TratamentoPrescrito"] . "</p>";
-                    echo "<p>Medicamentos: " . $cadastrohistorico["Medicamentos"] . "</p>";
-                    echo "<p>Veterinário Responsável: " . $cadastrohistorico["VeterinarioResponsavel"] . "</p>";
-                    echo "<p>Arquivo: " . $cadastrohistorico["AnexarArquivos"] . "</p>";
-                    echo "</section>";
-                }
-            ?>
+    <section class="container">
+        <section class="ver-dados">
+            <section class="ver-dados-box">
+                <h1>Históricos</h1>
+                <?php
+                    $listaHistoricos = retornarHistoricos();
+                    while($cadastrohistorico = mysqli_fetch_assoc($listaHistoricos)){
+                        echo "<section class=\"conteudo-bloco\">";
+                        echo "<h2>" . $cadastrohistorico["Codigo"] . " " . $cadastrohistorico["Pet"] . " " . "</h2>";
+                        echo "<strong><p>Tutor: </strong>" . $cadastrohistorico["Tutor"] . "</p>";
+                        echo "<strong><p>Data de Registro: </strong>" . $cadastrohistorico["DataRegistro"] . "</p>";
+                        echo "<strong><p>Diagnóstico: </strong>" . $cadastrohistorico["Diagnostico"] . "</p>";
+                        echo "<strong><p>Tratamento Prescrito: </strong>" . $cadastrohistorico["TratamentoPrescrito"] . "</p>";
+                        echo "<strong><p>Medicamentos: </strong>" . $cadastrohistorico["Medicamentos"] . "</p>";
+                        echo "<strong><p>Veterinário Responsável: </strong>" . $cadastrohistorico["VeterinarioResponsavel"] . "</p>";
+                        echo "<strong><p>Arquivo: </strong>" . $cadastrohistorico["AnexarArquivos"] . "</p>";
+                        echo "</section>";
+                    }
+                ?>
+            </section>
         </section>
     </section>
     <section class="mapa">

@@ -60,22 +60,24 @@ require "../processamento/funcoesBD.php";
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <section class="ver-dados">
-        <section class="ver-dados-box">
-            <h1>Talentos</h1>
-            <?php
-                $listaTalentos = retornarTalentos();
-                while($cadastrotalentos = mysqli_fetch_assoc($listaTalentos)){
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2>" . $cadastrotalentos["Codigo"] . " " . $cadastrotalentos["NomeCompleto"] . " " . "</h2>";
-                    echo "<p>CPF: " . $cadastrotalentos["CPF"] . "</p>";
-                    echo "<p>Área de Interesse: " . $cadastrotalentos["AreaInteresse"] . "</p>";
-                    echo "<p>Telefone: " . $cadastrotalentos["Telefone"] . "</p>";
-                    echo "<p>Endereço: " . $cadastrotalentos["Endereco"] . "</p>";
-                    echo "<p>E-mail: " . $cadastrotalentos["Email"] . "</p>";
-                    echo "</section>";
-                }
-            ?>
+    <section class="container">
+        <section class="ver-dados">
+            <section class="ver-dados-box">
+                <h1>Talentos</h1>
+                <?php
+                    $listaTalentos = retornarTalentos();
+                    while($cadastrotalentos = mysqli_fetch_assoc($listaTalentos)){
+                        echo "<section class=\"conteudo-bloco\">";
+                        echo "<h2>" . $cadastrotalentos["Codigo"] . " " . $cadastrotalentos["NomeCompleto"] . " " . "</h2>";
+                        echo "<strong><p>CPF: </strong>" . $cadastrotalentos["CPF"] . "</p>";
+                        echo "<strong><p>Área de Interesse: </strong>" . $cadastrotalentos["AreaInteresse"] . "</p>";
+                        echo "<strong><p>Telefone: </strong>" . $cadastrotalentos["Telefone"] . "</p>";
+                        echo "<strong><p>Endereço: </strong>" . $cadastrotalentos["Endereco"] . "</p>";
+                        echo "<strong><p>E-mail: </strong>" . $cadastrotalentos["Email"] . "</p>";
+                        echo "</section>";
+                    }
+                ?>
+            </section>
         </section>
     </section>
     <section class="mapa">

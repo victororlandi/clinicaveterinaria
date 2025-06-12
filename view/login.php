@@ -73,7 +73,7 @@
                 <div class="links">
                     <a href="#">esqueci minha senha</a>
                     <span> | </span>
-                    <a href="#">criar conta</a>
+                    <a href="cadastro-tutores.php">criar conta</a>
                 </div>
             </div>
         </div>

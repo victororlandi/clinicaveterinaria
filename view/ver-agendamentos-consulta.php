@@ -60,22 +60,24 @@ require "../processamento/funcoesBD.php";
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <section class="ver-dados">
-        <section class="ver-dados-box">
-            <h1>Consultas</h1>
-            <?php
-                $listaAgendamentosConsulta = retornarAgendamentosConsulta();
-                while($agendamentosconsulta = mysqli_fetch_assoc($listaAgendamentosConsulta)){
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2>" . $agendamentosconsulta["Codigo"] . " " . $agendamentosconsulta["Pet"] . " " . "</h2>";
-                    echo "<p>Tutor: " . $agendamentosconsulta["Tutor"] . "</p>";
-                    echo "<p>Data/Hora da Consulta: " . $agendamentosconsulta["DataHoraConsulta"] . "</p>";
-                    echo "<p>Motivo da Consulta: " . $agendamentosconsulta["MotivoConsulta"] . "</p>";
-                    echo "<p>Veterinário Responsável: " . $agendamentosconsulta["VeterinarioResponsavel"] . "</p>";
-                    echo "<p>Observações: " . $agendamentosconsulta["Observacoes"] . "</p>";
-                    echo "</section>";
-                }
-            ?>
+    <section class="container">
+        <section class="ver-dados">
+            <section class="ver-dados-box">
+                <h1>Consultas</h1>
+                <?php
+                    $listaAgendamentosConsulta = retornarAgendamentosConsulta();
+                    while($agendamentosconsulta = mysqli_fetch_assoc($listaAgendamentosConsulta)){
+                        echo "<section class=\"conteudo-bloco\">";
+                        echo "<h2>" . $agendamentosconsulta["Codigo"] . " " . $agendamentosconsulta["Pet"] . " " . "</h2>";
+                        echo "<strong><p>Tutor: </strong>" . $agendamentosconsulta["Tutor"] . "</p>";
+                        echo "<strong><p>Data/Hora da Consulta: </strong>" . $agendamentosconsulta["DataHoraConsulta"] . "</p>";
+                        echo "<strong><p>Motivo da Consulta: </strong>" . $agendamentosconsulta["MotivoConsulta"] . "</p>";
+                        echo "<strong><p>Veterinário Responsável: </strong>" . $agendamentosconsulta["VeterinarioResponsavel"] . "</p>";
+                        echo "<strong><p>Observações: </strong>" . $agendamentosconsulta["Observacoes"] . "</p>";
+                        echo "</section>";
+                    }
+                ?>
+            </section>
         </section>
     </section>
     <section class="mapa">

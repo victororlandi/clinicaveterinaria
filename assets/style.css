@@ -337,7 +337,6 @@ body {
     }
 }
 
-/* Estilos Gerais */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -349,7 +348,6 @@ body {
     text-transform: lowercase;
 }
 
-/* Título */
 .grid-container h1 {
     grid-column: 1 / -1;
     text-align: center;
@@ -372,7 +370,6 @@ body {
     border-radius: 2px;
 }
 
-/* Cards dos Espaços */
 .grid-container .espaco {
     background: white;
     border-radius: 15px;
@@ -401,7 +398,6 @@ body {
     padding: 0 10px;
 }
 
-/* Efeitos de Hover */
 .grid-container .espaco:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(255, 122, 125, 0.2);
@@ -411,7 +407,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Decoração dos Cards */
 .grid-container .espaco::before {
     content: '';
     display: block;
@@ -419,7 +414,6 @@ body {
     background: linear-gradient(90deg, #ff407d, #ffcad4);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -436,7 +430,6 @@ body {
     }
 }
 
-/* Estilos do Modal - Versão Compacta */
 .modal {
     display: none;
     position: fixed;
@@ -546,7 +539,6 @@ body {
     color: #1b3c73;
 }
 
-/* Títulos */
 .sobre-nos h2 {
     font-size: 1.8rem;
     color: #40679e;
@@ -555,7 +547,6 @@ body {
     margin-top: 40px;
 }
 
-/* História */
 .historia .conteudo-texto {
     line-height: 1.6;
 }
@@ -592,7 +583,6 @@ body {
     left: 0;
 }
 
-/* Missão/Visão */
 .missao-visao {
     display: flex;
     gap: 20px;
@@ -615,7 +605,6 @@ body {
     border-top: 5px solid #ff407d;
 }
 
-/* Números */
 .grid-numeros {
     display: flex;
     justify-content: space-around;
@@ -630,7 +619,6 @@ body {
     display: block;
 }
 
-/* Equipe */
 .grid-equipe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -836,7 +824,6 @@ h2 {
     text-decoration: underline;
 }
 
-/* --- TELA DE SERVIÇOS --- */
 .servicos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -903,6 +890,50 @@ h2 {
 .nav-link:hover {
     background: #1b3c73;
     color: white;
+}
+
+.ver-dados {
+    padding: 20px 0;
+}
+
+.ver-dados-box {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.ver-dados h1 {
+    color: #1b3c73;
+    margin-top: 0;
+    border-bottom: 2px solid #ffcad4;
+    padding-bottom: 10px;
+}
+
+.conteudo-bloco {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.conteudo-bloco:hover {
+    background: #ffcad4;
+    transform: translateX(5px);
+}
+
+.conteudo-bloco h2 {
+    color: #40679e;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    border-bottom: none;
+    padding: 0;
+}
+
+.conteudo-bloco p {
+    margin: 5px 0;
+    font-size: 0.9rem;
 }
 
 .mapa {

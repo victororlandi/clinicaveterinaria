@@ -60,23 +60,25 @@ require "../processamento/funcoesBD.php";
                 <img src="..\assets\img\propaganda\6.png">
             </a>
         </section>
-    <section class="ver-dados">
-        <section class="ver-dados-box">
-            <h1>Agendamentos de Vacinação</h1>
-            <?php
-                $listaAgendamentosVacinacao = retornarAgendamentosVacinacao();
-                while($agendamentosVacinacao = mysqli_fetch_assoc($listaAgendamentosVacinacao)){
-                    echo "<section class=\"conteudo-bloco\">";
-                    echo "<h2>" . $agendamentosVacinacao["Codigo"] . " " . $agendamentosVacinacao["Pet"] . " " . "</h2>";
-                    echo "<p>Vacina: " . $agendamentosVacinacao["Vacina"] . "</p>";
-                    echo "<p>Data de Aplicação: " . $agendamentosVacinacao["DataAplicacao"] . "</p>";
-                    echo "<p>Data da próxima Dose: " . $agendamentosVacinacao["DataProximaDose"] . "</p>";
-                    echo "<p>Veterinário Responsável: " . $agendamentosVacinacao["VeterinarioResponsavel"] . "</p>";
-                    echo "<p>Lote da Vacina: " . $agendamentosVacinacao["LoteVacina"] . "</p>";
-                    echo "<p>Tutor: " . $agendamentosVacinacao["Tutor"] . "</p>";
-                    echo "</section>";
-                }
-            ?>
+    <section class="container">
+        <section class="ver-dados">
+            <section class="ver-dados-box">
+                <h1>Agendamentos de Vacinação</h1>
+                <?php
+                    $listaAgendamentosVacinacao = retornarAgendamentosVacinacao();
+                    while($agendamentosVacinacao = mysqli_fetch_assoc($listaAgendamentosVacinacao)){
+                        echo "<section class=\"conteudo-bloco\">";
+                        echo "<h2>" . $agendamentosVacinacao["Codigo"] . " " . $agendamentosVacinacao["Pet"] . " " . "</h2>";
+                        echo "<strong><p>Vacina: </strong>" . $agendamentosVacinacao["Vacina"] . "</p>";
+                        echo "<strong><p>Data de Aplicação: </strong>" . $agendamentosVacinacao["DataAplicacao"] . "</p>";
+                        echo "<strong><p>Data da próxima Dose: </strong>" . $agendamentosVacinacao["DataProximaDose"] . "</p>";
+                        echo "<strong><p>Veterinário Responsável: </strong>" . $agendamentosVacinacao["VeterinarioResponsavel"] . "</p>";
+                        echo "<strong><p>Lote da Vacina: </strong>" . $agendamentosVacinacao["LoteVacina"] . "</p>";
+                        echo "<strong><p>Tutor: </strong>" . $agendamentosVacinacao["Tutor"] . "</p>";
+                        echo "</section>";
+                    }
+                ?>
+            </section>
         </section>
     </section>
     <section class="mapa">
