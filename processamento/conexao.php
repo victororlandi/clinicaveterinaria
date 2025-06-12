@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost: 3308", "root", "", "petisco");
+$mysqli = new mysqli('localhost', 'root','', 'petisco');
 
 if ($mysqli->connect_errno) {
     echo "Erro ao conectar: " . $mysqli->connect_error;
@@ -8,7 +8,7 @@ if ($mysqli->connect_errno) {
 
 function conectarBD(){
 
-    $conexao = mysqli_connect('localhost: 3308','root','','petisco');
+    $conexao = mysqli_connect('localhost', 'root','', 'petisco');
     return($conexao);
 }
 ?>
